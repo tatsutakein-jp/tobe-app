@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:app_mobile/initializer/app_config_initializer.dart';
 import 'package:app_mobile/router/app_navigation_bar.dart';
 import 'package:app_mobile/router/app_navigation_key.dart';
@@ -9,6 +11,7 @@ import 'package:core_model/config.dart';
 import 'package:core_model/feed.dart';
 import 'package:core_model/quest.dart';
 import 'package:feature_auth/feature_auth.dart';
+import 'package:feature_debug/feature_debug.dart';
 import 'package:feature_feed/feature_feed.dart';
 import 'package:feature_home/feature_home.dart';
 import 'package:feature_onboarding/feature_onboarding.dart';
@@ -24,6 +27,7 @@ import 'package:url_launcher/url_launcher.dart';
 part 'app_router.g.dart';
 part 'package:app_mobile/router/routes/app_shell_route.dart';
 part 'package:app_mobile/router/routes/auth_route.dart';
+part 'package:app_mobile/router/routes/debug_route.dart';
 part 'package:app_mobile/router/routes/feed_route.dart';
 part 'package:app_mobile/router/routes/home_route.dart';
 part 'package:app_mobile/router/routes/onboarding_route.dart';

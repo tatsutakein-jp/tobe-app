@@ -24,4 +24,10 @@ final class PreferencesDataStore implements DataStore {
 
   @override
   Future<bool> remove(String key) => _preferences.remove(key);
+
+  @override
+  Set<String> getKeys() => _preferences.getKeys();
+
+  @override
+  Object? get(String key) => _preferences.get(key);
 }

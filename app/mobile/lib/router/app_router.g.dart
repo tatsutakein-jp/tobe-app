@@ -9,6 +9,8 @@ part of 'app_router.dart';
 List<RouteBase> get $appRoutes => [
       $appShellRouteData,
       $authRoute,
+      $debugScreenRoute,
+      $dataStoreSettingsScreenRoute,
       $onboardingRoute,
     ];
 
@@ -280,6 +282,53 @@ extension $AuthRouteExtension on AuthRoute {
 
   String get location => GoRouteData.$location(
         '/auth',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+RouteBase get $debugScreenRoute => GoRouteData.$route(
+      path: '/debug',
+      factory: $DebugScreenRouteExtension._fromState,
+    );
+
+extension $DebugScreenRouteExtension on DebugScreenRoute {
+  static DebugScreenRoute _fromState(GoRouterState state) =>
+      const DebugScreenRoute();
+
+  String get location => GoRouteData.$location(
+        '/debug',
+      );
+
+  void go(BuildContext context) => context.go(location);
+
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  void replace(BuildContext context) => context.replace(location);
+}
+
+RouteBase get $dataStoreSettingsScreenRoute => GoRouteData.$route(
+      path: '/dataStoreSettings',
+      factory: $DataStoreSettingsScreenRouteExtension._fromState,
+    );
+
+extension $DataStoreSettingsScreenRouteExtension
+    on DataStoreSettingsScreenRoute {
+  static DataStoreSettingsScreenRoute _fromState(GoRouterState state) =>
+      const DataStoreSettingsScreenRoute();
+
+  String get location => GoRouteData.$location(
+        '/dataStoreSettings',
       );
 
   void go(BuildContext context) => context.go(location);

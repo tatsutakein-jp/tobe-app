@@ -1,0 +1,5 @@
+{
+  "debugAppBarTitle": "デバッグ機能",
+  "dataStoreSettingsTitle": "データストアの設定値",
+  "dataStoreSettingsDescription": "データストアの設定値を確認・変更します。"
+}

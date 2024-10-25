@@ -18,4 +18,8 @@ abstract interface class DataStore {
   Future<bool> setString(String key, String value);
 
   Future<bool> remove(String key);
+
+  Set<String> getKeys();
+
+  Object? get(String key);
 }

@@ -1,0 +1,5 @@
+{
+  "debugAppBarTitle": "Debug Feature",
+  "dataStoreSettingsTitle": "Data Store Settings",
+  "dataStoreSettingsDescription": "Check and change the settings of the data store."
+}

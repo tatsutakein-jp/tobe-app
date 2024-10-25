@@ -391,6 +391,13 @@ packages:
       relative: true
     source: path
     version: "1.0.0"
+  feature_debug:
+    dependency: "direct main"
+    description:
+      path: "../../feature/debug"
+      relative: true
+    source: path
+    version: "1.0.0"
   feature_feed:
     dependency: "direct main"
     description:

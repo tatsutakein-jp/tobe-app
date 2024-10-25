@@ -11,6 +11,7 @@ final class AppPagePath {
   static const license = 'license';
   static const theme = 'theme';
   static const feeds = '/feeds';
+  static const debug = '/debug';
 }
 
 /// 認証済みであることが前提のパス

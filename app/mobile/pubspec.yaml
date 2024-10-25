@@ -33,6 +33,8 @@ dependencies:
   envied: 0.5.4+1
   feature_auth:
     path: ../../feature/auth
+  feature_debug:
+    path: ../../feature/debug
   feature_feed:
     path: ../../feature/feed
   feature_home:

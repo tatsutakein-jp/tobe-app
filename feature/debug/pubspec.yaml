@@ -1,0 +1,39 @@
+name: feature_debug
+description: "This package provides debug features."
+version: 1.0.0
+publish_to: "none"
+
+environment:
+  sdk: 3.5.4
+  flutter: 3.24.4
+
+dependencies:
+  core_common:
+    path: ../../core/common
+  core_datastore:
+    path: ../../core/datastore
+  core_designsystem:
+    path: ../../core/designsystem
+  core_domain:
+    path: ../../core/domain
+  core_model:
+    path: ../../core/model
+  core_ui:
+    path: ../../core/ui
+  flutter:
+    sdk: flutter
+  flutter_hooks: 0.20.5
+  flutter_localizations:
+    sdk: flutter
+  go_router: 14.3.0
+  hooks_riverpod: 2.6.1
+  intl: 0.19.0
+
+dev_dependencies:
+  core_testing:
+    path: ../../core/testing
+  flutter_test:
+    sdk: flutter
+  yumemi_lints: 2.2.0
+
+flutter:
