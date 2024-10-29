@@ -62,7 +62,7 @@ jobs:
       - # https://github.com/marketplace/actions/deploy-to-cloud-run
         name: Deploy to Cloud Run
         id: deploy
-        uses: google-github-actions/deploy-cloudrun@6ffa584a8ff78a430af94158c5538716464ea5a0 # v2.7.1
+        uses: google-github-actions/deploy-cloudrun@1ec29da1351112c7904fb60454a55e3e1021a51c # v2.7.2
         with:
           service: ${{ inputs.service }}
           region: ${{ inputs.gar-location }}
