@@ -15,7 +15,7 @@ dependencies:
   flutter_adaptive_scaffold: 0.3.1
   flutter_localizations:
     sdk: flutter
-  flutter_svg: 2.0.10+1
+  flutter_svg: 2.0.11
   gap: 3.0.1
   intl: 0.19.0
 
