@@ -22,7 +22,7 @@ jobs:
 
       # https://github.com/marketplace/actions/mise-action
       - name: mise action
-        uses: jdx/mise-action@a4cfebde9ceb9b49b54db1d148fa86a52e1b7fab # v2.1.4
+        uses: jdx/mise-action@3cea416127de5a8efd9642eb725267750e5c09b7 # v2.1.5
 
       - name: setup gitignore target files
         uses: ./.github/actions/setup-gitignore-target-files
