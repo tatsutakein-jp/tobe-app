@@ -30,7 +30,7 @@ dependencies:
     path: ../../core/ui
   cupertino_icons: 1.0.8
   dynamic_color: 1.7.0
-  envied: 0.5.4+1
+  envied: 1.0.0
   feature_auth:
     path: ../../feature/auth
   feature_debug:
