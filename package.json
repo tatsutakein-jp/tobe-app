@@ -20,7 +20,7 @@
     "firebase-tools": "13.25.0",
     "graphqurl": "1.0.3",
     "js-yaml": "4.1.0",
-    "lefthook": "1.8.2",
+    "lefthook": "1.8.4",
     "plop": "4.0.1",
     "typescript": "5.6.3"
   }
