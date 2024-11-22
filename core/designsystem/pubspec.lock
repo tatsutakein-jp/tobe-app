@@ -182,7 +182,7 @@ packages:
     source: path
     version: "1.0.0"
   core_model:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../model"
       relative: true
@@ -785,4 +785,4 @@ packages:
     version: "2.2.0"
 sdks:
   dart: "3.5.4"
-  flutter: ">=3.24.4"
+  flutter: ">=3.24.5"

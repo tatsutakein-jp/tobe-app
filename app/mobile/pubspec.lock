@@ -191,7 +191,7 @@ packages:
     source: hosted
     version: "3.1.2"
   core_analytics:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/analytics"
       relative: true
@@ -219,14 +219,14 @@ packages:
     source: path
     version: "1.0.0"
   core_data:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/data"
       relative: true
     source: path
     version: "1.0.0"
   core_database:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/database"
       relative: true
@@ -275,7 +275,7 @@ packages:
     source: path
     version: "1.0.0"
   core_network_model:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/network_model"
       relative: true
@@ -1428,4 +1428,4 @@ packages:
     version: "2.2.0"
 sdks:
   dart: "3.5.4"
-  flutter: ">=3.24.4"
+  flutter: ">=3.24.5"
