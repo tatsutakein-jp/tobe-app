@@ -191,7 +191,7 @@ packages:
     source: hosted
     version: "3.1.2"
   core_analytics:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../core/analytics"
       relative: true
@@ -219,14 +219,14 @@ packages:
     source: path
     version: "1.0.0"
   core_data:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../core/data"
       relative: true
     source: path
     version: "1.0.0"
   core_database:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../core/database"
       relative: true
@@ -275,7 +275,7 @@ packages:
     source: path
     version: "1.0.0"
   core_network_model:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../core/network_model"
       relative: true
