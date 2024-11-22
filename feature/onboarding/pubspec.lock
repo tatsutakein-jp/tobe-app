@@ -26,10 +26,10 @@ packages:
     dependency: transitive
     description:
       name: anyhow
-      sha256: edee1f48becc39e059344740a34c45382e93f84354bfcfd65a6ac5f0453f28c7
+      sha256: "05e046d1f2cea2fb72e713429dbb8b02764c92a1df35a5b9220a62d41fa106fc"
       url: "https://pub.dev"
     source: hosted
-    version: "1.3.1"
+    version: "1.3.2"
   archive:
     dependency: transitive
     description:
@@ -183,7 +183,7 @@ packages:
     source: hosted
     version: "3.1.2"
   core_authenticator:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/authenticator"
       relative: true
@@ -197,21 +197,21 @@ packages:
     source: path
     version: "1.0.0"
   core_data:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/data"
       relative: true
     source: path
     version: "1.0.0"
   core_database:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/database"
       relative: true
     source: path
     version: "1.0.0"
   core_datastore:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/datastore"
       relative: true
@@ -239,14 +239,14 @@ packages:
     source: path
     version: "1.0.0"
   core_network:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/network"
       relative: true
     source: path
     version: "1.0.0"
   core_network_model:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       path: "../../core/network_model"
       relative: true
@@ -369,10 +369,10 @@ packages:
     dependency: transitive
     description:
       name: flutter_svg
-      sha256: "7b4ca6cf3304575fe9c8ec64813c8d02ee41d2afe60bcfe0678bcb5375d596a2"
+      sha256: "936d9c1c010d3e234d1672574636f3352b4941ca3decaddd3cafaeb9ad49c471"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.10+1"
+    version: "2.0.15"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -414,10 +414,10 @@ packages:
     dependency: "direct main"
     description:
       name: go_router
-      sha256: "6f1b756f6e863259a99135ff3c95026c3cdca17d10ebef2bba2261a25ddc8bbc"
+      sha256: "8660b74171fafae4aa8202100fa2e55349e078281dadc73a241eb8e758534d9d"
       url: "https://pub.dev"
     source: hosted
-    version: "14.3.0"
+    version: "14.6.1"
   graphs:
     dependency: transitive
     description:
@@ -642,14 +642,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.6.1"
+  rust:
+    dependency: transitive
+    description:
+      name: rust
+      sha256: a5331e469c289e104b2e58f8760ba59bde704aad1ee292a4c0ccc72c683f6135
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.3.7"
   rust_core:
     dependency: transitive
     description:
       name: rust_core
-      sha256: "1a2d77ea819742dbc73e536baab052938c134b3cc72137460d0844a583cda7c2"
+      sha256: "39e893e58d66da796dab4001815891a11c3e0d2f2f83353362822ebd72b902dc"
       url: "https://pub.dev"
     source: hosted
-    version: "1.3.3"
+    version: "1.3.7"
   shelf:
     dependency: transitive
     description:
@@ -771,10 +779,10 @@ packages:
     dependency: transitive
     description:
       name: vector_graphics
-      sha256: "32c3c684e02f9bc0afb0ae0aa653337a2fe022e8ab064bcd7ffda27a74e288e3"
+      sha256: "27d5fefe86fb9aace4a9f8375b56b3c292b64d8c04510df230f849850d912cb7"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.11+1"
+    version: "1.1.15"
   vector_graphics_codec:
     dependency: transitive
     description:
@@ -787,10 +795,10 @@ packages:
     dependency: transitive
     description:
       name: vector_graphics_compiler
-      sha256: "12faff3f73b1741a36ca7e31b292ddeb629af819ca9efe9953b70bd63fc8cd81"
+      sha256: ab9ff38fc771e9ee1139320adbe3d18a60327370c218c60752068ebee4b49ab1
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.11+1"
+    version: "1.1.15"
   vector_math:
     dependency: transitive
     description:
