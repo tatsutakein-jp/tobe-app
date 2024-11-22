@@ -180,14 +180,14 @@ packages:
     source: path
     version: "1.0.0"
   core_database:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../database"
       relative: true
     source: path
     version: "1.0.0"
   core_datastore:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../datastore"
       relative: true
@@ -201,14 +201,14 @@ packages:
     source: path
     version: "1.0.0"
   core_network:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../network"
       relative: true
     source: path
     version: "1.0.0"
   core_network_model:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../network_model"
       relative: true
