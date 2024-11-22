@@ -182,7 +182,7 @@ packages:
     source: path
     version: "1.0.0"
   core_model:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../model"
       relative: true
