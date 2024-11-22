@@ -40,7 +40,8 @@
         "*"
       ],
       "excludePackageNames": [
-        "collection"
+        "collection",
+        "intl",
       ],
       "matchUpdateTypes": [
         "minor",
