@@ -56,6 +56,13 @@
       ],
     },
     {
+      "groupName": "envied",
+      "matchPackageNames": [
+        "envied",
+        "envied_generator",
+      ],
+    },
+    {
       "groupName": "riverpod",
       "matchPackageNames": [
         "flutter_riverpod",
