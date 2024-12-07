@@ -45,10 +45,10 @@ dependencies:
     path: ../../feature/quest
   feature_settings:
     path: ../../feature/settings
-  firebase_analytics: 11.3.5
-  firebase_auth: 5.3.3
-  firebase_core: 3.8.0
-  firebase_remote_config: 5.1.5
+  firebase_analytics: 11.3.6
+  firebase_auth: 5.3.4
+  firebase_core: 3.8.1
+  firebase_remote_config: 5.2.0
   flutter:
     sdk: flutter
   flutter_hooks: 0.20.5
