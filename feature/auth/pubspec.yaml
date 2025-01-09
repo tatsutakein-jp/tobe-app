@@ -1,6 +1,5 @@
 name: feature_auth
 description: "This package provides auth features."
-version: 1.0.0
 publish_to: "none"
 
 environment:

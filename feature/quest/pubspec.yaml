@@ -1,6 +1,5 @@
 name: feature_quest
 description: "This package provides quest features."
-version: 1.0.0
 publish_to: "none"
 
 environment:

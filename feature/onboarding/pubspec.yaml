@@ -1,6 +1,5 @@
 name: feature_onboarding
 description: "This package provides onboarding features."
-version: 1.0.0
 publish_to: "none"
 
 environment:

@@ -1,6 +1,5 @@
 name: feature_home
 description: "This package provides home features."
-version: 1.0.0
 publish_to: "none"
 
 environment:

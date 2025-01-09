@@ -1,6 +1,5 @@
 name: core_common
 description: This package provides convenience functions and other functions commonly used in packages.
-version: 1.0.0
 publish_to: "none"
 
 environment:

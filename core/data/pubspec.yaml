@@ -1,6 +1,5 @@
 name: core_data
 description: This package provides the repository layer.
-version: 1.0.0
 publish_to: "none"
 
 environment:

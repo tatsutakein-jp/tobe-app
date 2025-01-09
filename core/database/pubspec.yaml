@@ -1,6 +1,5 @@
 name: core_database
 description: This package provides local database operations.
-version: 1.0.0
 publish_to: "none"
 
 environment:

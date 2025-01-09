@@ -1,6 +1,5 @@
 name: feature_feed
 description: "This package provides feed features."
-version: 1.0.0
 publish_to: "none"
 
 environment:

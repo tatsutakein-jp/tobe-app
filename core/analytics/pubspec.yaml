@@ -1,6 +1,5 @@
 name: core_analytics
 description: This package provides functions for analysis.
-version: 1.0.0
 publish_to: "none"
 
 environment:

@@ -1,6 +1,5 @@
 name: feature_settings
 description: "This package provides settings features."
-version: 1.0.0
 publish_to: "none"
 
 environment:

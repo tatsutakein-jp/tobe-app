@@ -1,6 +1,5 @@
 name: core_testing
 description: This package provides convenience functions for testing, etc.
-version: 1.0.0
 publish_to: "none"
 
 environment:

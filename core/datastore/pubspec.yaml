@@ -1,6 +1,5 @@
 name: core_datastore
 description: This package provides local preferences operations.
-version: 1.0.0
 publish_to: "none"
 
 environment:

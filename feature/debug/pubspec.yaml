@@ -1,6 +1,5 @@
 name: feature_debug
 description: "This package provides debug features."
-version: 1.0.0
 publish_to: "none"
 
 environment:

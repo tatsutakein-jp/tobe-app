@@ -1,6 +1,5 @@
 name: core_authenticator
 description: This package provides functions for authentication.
-version: 1.0.0
 publish_to: "none"
 
 environment:

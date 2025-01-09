@@ -1,6 +1,5 @@
 name: core_model
 description: This package provides model classes.
-version: 1.0.0
 publish_to: "none"
 
 environment:

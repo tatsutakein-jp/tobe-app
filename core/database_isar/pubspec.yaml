@@ -1,6 +1,5 @@
 name: core_database_isar
 description: This package provides local database operations using Isar.
-version: 1.0.0
 publish_to: "none"
 
 environment:

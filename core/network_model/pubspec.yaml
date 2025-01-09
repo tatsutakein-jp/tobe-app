@@ -1,6 +1,5 @@
 name: core_network_model
 description: This package provides network operations.
-version: 1.0.0
 publish_to: "none"
 
 environment:
