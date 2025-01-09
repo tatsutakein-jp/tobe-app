@@ -5,6 +5,8 @@ publish_to: "none"
 environment:
   sdk: 3.6.0
 
+resolution: workspace
+
 dependencies:
   anyhow: 1.3.2
   collection: 1.19.0

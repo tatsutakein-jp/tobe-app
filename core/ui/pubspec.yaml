@@ -6,13 +6,12 @@ environment:
   sdk: 3.6.0
   flutter: 3.27.1
 
+resolution: workspace
+
 dependencies:
-  core_common:
-    path: ../common
-  core_designsystem:
-    path: ../designsystem
-  core_model:
-    path: ../model
+  core_common: any
+  core_designsystem: any
+  core_model: any
   flutter:
     sdk: flutter
   flutter_hooks: 0.20.5
@@ -25,16 +24,11 @@ dependencies:
 
 dev_dependencies:
   build_runner: 2.4.13
-  core_testing:
-    path: ../testing
+  core_testing: any
   flutter_test:
     sdk: flutter
   freezed: 2.5.7
   riverpod_generator: 2.6.3
   yumemi_lints: 2.2.0
-
-dependency_overrides:
-  # workaround
-  meta: 1.15.0
 
 flutter:

@@ -5,11 +5,11 @@ publish_to: "none"
 environment:
   sdk: 3.6.0
 
+resolution: workspace
+
 dependencies:
-  core_common:
-    path: ../common
-  core_model:
-    path: ../model
+  core_common: any
+  core_model: any
   riverpod_annotation: 2.6.1
 
 dev_dependencies:

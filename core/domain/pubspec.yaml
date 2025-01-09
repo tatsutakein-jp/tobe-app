@@ -5,21 +5,18 @@ publish_to: "none"
 environment:
   sdk: 3.6.0
 
+resolution: workspace
+
 dependencies:
-  core_authenticator:
-    path: ../authenticator
-  core_common:
-    path: ../common
-  core_data:
-    path: ../data
-  core_model:
-    path: ../model
+  core_authenticator: any
+  core_common: any
+  core_data: any
+  core_model: any
   riverpod_annotation: 2.6.1
 
 dev_dependencies:
   build_runner: 2.4.13
-  core_testing:
-    path: ../testing
+  core_testing: any
   riverpod_generator: 2.6.3
   test: 1.25.8
   yumemi_lints: 2.2.0

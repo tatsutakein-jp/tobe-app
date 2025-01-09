@@ -5,15 +5,13 @@ publish_to: "none"
 environment:
   sdk: 3.6.0
 
+resolution: workspace
+
 dependencies:
-  core_authenticator:
-    path: ../authenticator
-  core_common:
-    path: ../common
-  core_model:
-    path: ../model
-  core_network_model:
-    path: ../network_model
+  core_authenticator: any
+  core_common: any
+  core_model: any
+  core_network_model: any
   dio: 5.7.0
   freezed_annotation: 2.4.4
   retrofit: 4.4.1

@@ -5,9 +5,10 @@ publish_to: "none"
 environment:
   sdk: 3.6.0
 
+resolution: workspace
+
 dependencies:
-  core_common:
-    path: ../common
+  core_common: any
   freezed_annotation: 2.4.4
   riverpod: 2.6.1
   riverpod_annotation: 2.6.1

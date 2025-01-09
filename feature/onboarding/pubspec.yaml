@@ -6,17 +6,14 @@ environment:
   sdk: 3.6.0
   flutter: 3.27.1
 
+resolution: workspace
+
 dependencies:
-  core_common:
-    path: ../../core/common
-  core_designsystem:
-    path: ../../core/designsystem
-  core_domain:
-    path: ../../core/domain
-  core_model:
-    path: ../../core/model
-  core_ui:
-    path: ../../core/ui
+  core_common: any
+  core_designsystem: any
+  core_domain: any
+  core_model: any
+  core_ui: any
   flutter:
     sdk: flutter
   flutter_hooks: 0.20.5
@@ -41,4 +38,3 @@ flutter_gen:
   assets:
     outputs:
       package_parameter_enabled: true
-
