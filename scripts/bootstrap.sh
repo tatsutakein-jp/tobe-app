@@ -118,16 +118,16 @@ fi
 ##
 ##############################################################################
 echo ""
-echo "🚀 Melos bootstrap: Start"
+echo "🚀 melos bootstrap:post_hooks: Start"
 if type melos >/dev/null 2>&1; then
-  if melos bs; then
-    echo "✅ Melos bootstrap: Success"
+  if melos bootstrap:post_hooks; then
+    echo "✅ melos bootstrap:post_hooks: Success"
   else
-    echo "🚫 Melos bootstrap: Failed"
+    echo "🚫 melos bootstrap:post_hooks: Failed"
   fi
 else
-  echo "⚠️ Melos bootstrap: Skip melos because it could not be found."
-  echo "⚠️ Melos bootstrap: See https://melos.invertase.dev/getting-started for installation."
+  echo "⚠️ melos bootstrap:post_hooks: Skip melos because it could not be found."
+  echo "⚠️ melos bootstrap:post_hooks: See https://melos.invertase.dev/getting-started for installation."
 fi
 
 ##############################################################################

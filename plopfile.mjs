@@ -10,9 +10,9 @@ import {
  */
 export default function (plop) {
   // Register a custom action type
-  plop.setActionType("melosBootstrap", (answers, config, plop) => {
+  plop.setActionType("dartPubGet", (answers, config, plop) => {
     return new Promise((resolve, reject) => {
-      exec("melos bs", (error, stdout, stderr) => {
+      exec("dart pub get", (error, stdout, stderr) => {
         if (error) {
           console.error(`Error: ${error.message}`);
           reject(error);
@@ -22,7 +22,7 @@ export default function (plop) {
           console.error(`Stderr: ${stderr}`);
         }
         console.log(`Stdout: ${stdout}`);
-        resolve("Melos bs command executed successfully");
+        resolve("dart pub get command executed successfully");
       });
     });
   });
