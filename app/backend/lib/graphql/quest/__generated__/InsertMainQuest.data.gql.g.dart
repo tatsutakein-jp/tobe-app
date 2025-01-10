@@ -298,9 +298,10 @@ class GInsertMainQuestDataBuilder
     try {
       _$result = _$v ??
           new _$GInsertMainQuestData._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GInsertMainQuestData', 'G__typename'),
-              insertMainQuestsOne: _insertMainQuestsOne?.build());
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, r'GInsertMainQuestData', 'G__typename'),
+            insertMainQuestsOne: _insertMainQuestsOne?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -520,22 +521,23 @@ class GInsertMainQuestData_insertMainQuestsOneBuilder
   _$GInsertMainQuestData_insertMainQuestsOne _build() {
     final _$result = _$v ??
         new _$GInsertMainQuestData_insertMainQuestsOne._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GInsertMainQuestData_insertMainQuestsOne', 'G__typename'),
-            id: BuiltValueNullFieldError.checkNotNull(
-                id, r'GInsertMainQuestData_insertMainQuestsOne', 'id'),
-            title: BuiltValueNullFieldError.checkNotNull(
-                title, r'GInsertMainQuestData_insertMainQuestsOne', 'title'),
-            description: BuiltValueNullFieldError.checkNotNull(description,
-                r'GInsertMainQuestData_insertMainQuestsOne', 'description'),
-            begunAt: begunAt,
-            endedAt: endedAt,
-            categoryId: categoryId,
-            status: BuiltValueNullFieldError.checkNotNull(
-                status, r'GInsertMainQuestData_insertMainQuestsOne', 'status'),
-            coverImageUrl: coverImageUrl,
-            note: BuiltValueNullFieldError.checkNotNull(
-                note, r'GInsertMainQuestData_insertMainQuestsOne', 'note'));
+          G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+              r'GInsertMainQuestData_insertMainQuestsOne', 'G__typename'),
+          id: BuiltValueNullFieldError.checkNotNull(
+              id, r'GInsertMainQuestData_insertMainQuestsOne', 'id'),
+          title: BuiltValueNullFieldError.checkNotNull(
+              title, r'GInsertMainQuestData_insertMainQuestsOne', 'title'),
+          description: BuiltValueNullFieldError.checkNotNull(description,
+              r'GInsertMainQuestData_insertMainQuestsOne', 'description'),
+          begunAt: begunAt,
+          endedAt: endedAt,
+          categoryId: categoryId,
+          status: BuiltValueNullFieldError.checkNotNull(
+              status, r'GInsertMainQuestData_insertMainQuestsOne', 'status'),
+          coverImageUrl: coverImageUrl,
+          note: BuiltValueNullFieldError.checkNotNull(
+              note, r'GInsertMainQuestData_insertMainQuestsOne', 'note'),
+        );
     replace(_$result);
     return _$result;
   }

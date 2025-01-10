@@ -201,7 +201,11 @@ class GInsertMainQuestVarsBuilder
   _$GInsertMainQuestVars _build() {
     final _$result = _$v ??
         new _$GInsertMainQuestVars._(
-            userId: userId, title: title, description: description, note: note);
+          userId: userId,
+          title: title,
+          description: description,
+          note: note,
+        );
     replace(_$result);
     return _$result;
   }

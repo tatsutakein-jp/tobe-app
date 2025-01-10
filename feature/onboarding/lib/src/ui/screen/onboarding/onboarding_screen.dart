@@ -2,8 +2,8 @@ import 'package:core_common/extension.dart';
 import 'package:core_designsystem/component.dart';
 import 'package:core_designsystem/space.dart';
 import 'package:feature_onboarding/src/ui/screen/onboarding/component/page_indicator.dart';
-import 'package:feature_onboarding/src/ui/screen/onboarding/page/agreement_page.dart';
-import 'package:feature_onboarding/src/ui/screen/onboarding/page/welcome_page.dart';
+import 'package:feature_onboarding/src/ui/screen/onboarding/screen/agreement_screen.dart';
+import 'package:feature_onboarding/src/ui/screen/onboarding/screen/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
@@ -22,8 +22,8 @@ final class OnboardingScreen extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final pages = [
-      const WelcomePage(),
-      AgreementPage(
+      const WelcomeScreen(),
+      AgreementScreen(
         onAgreeAndContinue: _onAgreeAndContinue,
       ),
     ];

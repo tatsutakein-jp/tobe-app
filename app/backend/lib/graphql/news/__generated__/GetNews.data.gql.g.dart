@@ -241,9 +241,10 @@ class GGetNewsDataBuilder
     try {
       _$result = _$v ??
           new _$GGetNewsData._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GGetNewsData', 'G__typename'),
-              news: news.build());
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, r'GGetNewsData', 'G__typename'),
+            news: news.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -404,16 +405,17 @@ class GGetNewsData_newsBuilder
   _$GGetNewsData_news _build() {
     final _$result = _$v ??
         new _$GGetNewsData_news._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GGetNewsData_news', 'G__typename'),
-            title: BuiltValueNullFieldError.checkNotNull(
-                title, r'GGetNewsData_news', 'title'),
-            slug: BuiltValueNullFieldError.checkNotNull(
-                slug, r'GGetNewsData_news', 'slug'),
-            publishedAt: publishedAt,
-            excerpt: BuiltValueNullFieldError.checkNotNull(
-                excerpt, r'GGetNewsData_news', 'excerpt'),
-            coverImageUrl: coverImageUrl);
+          G__typename: BuiltValueNullFieldError.checkNotNull(
+              G__typename, r'GGetNewsData_news', 'G__typename'),
+          title: BuiltValueNullFieldError.checkNotNull(
+              title, r'GGetNewsData_news', 'title'),
+          slug: BuiltValueNullFieldError.checkNotNull(
+              slug, r'GGetNewsData_news', 'slug'),
+          publishedAt: publishedAt,
+          excerpt: BuiltValueNullFieldError.checkNotNull(
+              excerpt, r'GGetNewsData_news', 'excerpt'),
+          coverImageUrl: coverImageUrl,
+        );
     replace(_$result);
     return _$result;
   }

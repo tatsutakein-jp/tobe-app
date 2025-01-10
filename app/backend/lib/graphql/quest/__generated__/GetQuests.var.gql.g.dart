@@ -128,8 +128,9 @@ class GGetQuestsVarsBuilder
   _$GGetQuestsVars _build() {
     final _$result = _$v ??
         new _$GGetQuestsVars._(
-            userId: BuiltValueNullFieldError.checkNotNull(
-                userId, r'GGetQuestsVars', 'userId'));
+          userId: BuiltValueNullFieldError.checkNotNull(
+              userId, r'GGetQuestsVars', 'userId'),
+        );
     replace(_$result);
     return _$result;
   }

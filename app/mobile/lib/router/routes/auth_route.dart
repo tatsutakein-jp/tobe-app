@@ -8,7 +8,7 @@ final class AuthRoute extends GoRouteData {
   const AuthRoute();
 
   @override
-  Widget build(BuildContext context, GoRouterState state) => AuthPage(
+  Widget build(BuildContext context, GoRouterState state) => AuthScreen(
         onLoginSuccess: () => const HomeRoute().go(context),
       );
 }

@@ -7709,14 +7709,15 @@ class GAchievementsBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GAchievementsBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              createdAt: _createdAt?.build(),
-              description: _description?.build(),
-              id: _id?.build(),
-              name: _name?.build(),
-              updatedAt: _updatedAt?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            createdAt: _createdAt?.build(),
+            description: _description?.build(),
+            id: _id?.build(),
+            name: _name?.build(),
+            updatedAt: _updatedAt?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -7867,11 +7868,12 @@ class GAchievementsOrderByBuilder
   _$GAchievementsOrderBy _build() {
     final _$result = _$v ??
         new _$GAchievementsOrderBy._(
-            createdAt: createdAt,
-            description: description,
-            id: id,
-            name: name,
-            updatedAt: updatedAt);
+          createdAt: createdAt,
+          description: description,
+          id: id,
+          name: name,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -7976,7 +7978,9 @@ class GAchievementsStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GAchievementsStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -8119,11 +8123,12 @@ class GAchievementsStreamCursorValueInputBuilder
   _$GAchievementsStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GAchievementsStreamCursorValueInput._(
-            createdAt: createdAt,
-            description: description,
-            id: id,
-            name: name,
-            updatedAt: updatedAt);
+          createdAt: createdAt,
+          description: description,
+          id: id,
+          name: name,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -8298,15 +8303,16 @@ class GIntComparisonExpBuilder
     try {
       _$result = _$v ??
           new _$GIntComparisonExp._(
-              G_eq: G_eq,
-              G_gt: G_gt,
-              G_gte: G_gte,
-              G_in: _G_in?.build(),
-              G_isNull: G_isNull,
-              G_lt: G_lt,
-              G_lte: G_lte,
-              G_neq: G_neq,
-              G_nin: _G_nin?.build());
+            G_eq: G_eq,
+            G_gt: G_gt,
+            G_gte: G_gte,
+            G_in: _G_in?.build(),
+            G_isNull: G_isNull,
+            G_lt: G_lt,
+            G_lte: G_lte,
+            G_neq: G_neq,
+            G_nin: _G_nin?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -8462,11 +8468,12 @@ class GMainQuestRelationsBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GMainQuestRelationsBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              childQuestId: _childQuestId?.build(),
-              parentQuestId: _parentQuestId?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            childQuestId: _childQuestId?.build(),
+            parentQuestId: _parentQuestId?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -8583,7 +8590,9 @@ class GMainQuestRelationsInsertInputBuilder
   _$GMainQuestRelationsInsertInput _build() {
     final _$result = _$v ??
         new _$GMainQuestRelationsInsertInput._(
-            childQuestId: childQuestId, parentQuestId: parentQuestId);
+          childQuestId: childQuestId,
+          parentQuestId: parentQuestId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -8704,10 +8713,11 @@ class GMainQuestRelationsOnConflictBuilder
     try {
       _$result = _$v ??
           new _$GMainQuestRelationsOnConflict._(
-              constraint: BuiltValueNullFieldError.checkNotNull(
-                  constraint, r'GMainQuestRelationsOnConflict', 'constraint'),
-              updateColumns: updateColumns.build(),
-              where: _where?.build());
+            constraint: BuiltValueNullFieldError.checkNotNull(
+                constraint, r'GMainQuestRelationsOnConflict', 'constraint'),
+            updateColumns: updateColumns.build(),
+            where: _where?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -8818,7 +8828,9 @@ class GMainQuestRelationsOrderByBuilder
   _$GMainQuestRelationsOrderBy _build() {
     final _$result = _$v ??
         new _$GMainQuestRelationsOrderBy._(
-            childQuestId: childQuestId, parentQuestId: parentQuestId);
+          childQuestId: childQuestId,
+          parentQuestId: parentQuestId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -8925,10 +8937,11 @@ class GMainQuestRelationsPkColumnsInputBuilder
   _$GMainQuestRelationsPkColumnsInput _build() {
     final _$result = _$v ??
         new _$GMainQuestRelationsPkColumnsInput._(
-            childQuestId: BuiltValueNullFieldError.checkNotNull(childQuestId,
-                r'GMainQuestRelationsPkColumnsInput', 'childQuestId'),
-            parentQuestId: BuiltValueNullFieldError.checkNotNull(parentQuestId,
-                r'GMainQuestRelationsPkColumnsInput', 'parentQuestId'));
+          childQuestId: BuiltValueNullFieldError.checkNotNull(childQuestId,
+              r'GMainQuestRelationsPkColumnsInput', 'childQuestId'),
+          parentQuestId: BuiltValueNullFieldError.checkNotNull(parentQuestId,
+              r'GMainQuestRelationsPkColumnsInput', 'parentQuestId'),
+        );
     replace(_$result);
     return _$result;
   }
@@ -9026,7 +9039,9 @@ class GMainQuestRelationsSetInputBuilder
   _$GMainQuestRelationsSetInput _build() {
     final _$result = _$v ??
         new _$GMainQuestRelationsSetInput._(
-            childQuestId: childQuestId, parentQuestId: parentQuestId);
+          childQuestId: childQuestId,
+          parentQuestId: parentQuestId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -9137,7 +9152,9 @@ class GMainQuestRelationsStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GMainQuestRelationsStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -9256,7 +9273,9 @@ class GMainQuestRelationsStreamCursorValueInputBuilder
   _$GMainQuestRelationsStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GMainQuestRelationsStreamCursorValueInput._(
-            childQuestId: childQuestId, parentQuestId: parentQuestId);
+          childQuestId: childQuestId,
+          parentQuestId: parentQuestId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -9359,7 +9378,9 @@ class GMainQuestRelationsUpdatesBuilder
     try {
       _$result = _$v ??
           new _$GMainQuestRelationsUpdates._(
-              G_set: _G_set?.build(), where: where.build());
+            G_set: _G_set?.build(),
+            where: where.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -9650,22 +9671,23 @@ class GMainQuestsBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GMainQuestsBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              begunAt: _begunAt?.build(),
-              categoryId: _categoryId?.build(),
-              coverImageUrl: _coverImageUrl?.build(),
-              createdAt: _createdAt?.build(),
-              deletedAt: _deletedAt?.build(),
-              description: _description?.build(),
-              endedAt: _endedAt?.build(),
-              id: _id?.build(),
-              note: _note?.build(),
-              status: _status?.build(),
-              title: _title?.build(),
-              updatedAt: _updatedAt?.build(),
-              userId: _userId?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            begunAt: _begunAt?.build(),
+            categoryId: _categoryId?.build(),
+            coverImageUrl: _coverImageUrl?.build(),
+            createdAt: _createdAt?.build(),
+            deletedAt: _deletedAt?.build(),
+            description: _description?.build(),
+            endedAt: _endedAt?.build(),
+            id: _id?.build(),
+            note: _note?.build(),
+            status: _status?.build(),
+            title: _title?.build(),
+            updatedAt: _updatedAt?.build(),
+            userId: _userId?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -9925,19 +9947,20 @@ class GMainQuestsInsertInputBuilder
   _$GMainQuestsInsertInput _build() {
     final _$result = _$v ??
         new _$GMainQuestsInsertInput._(
-            begunAt: begunAt,
-            categoryId: categoryId,
-            coverImageUrl: coverImageUrl,
-            createdAt: createdAt,
-            deletedAt: deletedAt,
-            description: description,
-            endedAt: endedAt,
-            id: id,
-            note: note,
-            status: status,
-            title: title,
-            updatedAt: updatedAt,
-            userId: userId);
+          begunAt: begunAt,
+          categoryId: categoryId,
+          coverImageUrl: coverImageUrl,
+          createdAt: createdAt,
+          deletedAt: deletedAt,
+          description: description,
+          endedAt: endedAt,
+          id: id,
+          note: note,
+          status: status,
+          title: title,
+          updatedAt: updatedAt,
+          userId: userId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -10054,10 +10077,11 @@ class GMainQuestsOnConflictBuilder
     try {
       _$result = _$v ??
           new _$GMainQuestsOnConflict._(
-              constraint: BuiltValueNullFieldError.checkNotNull(
-                  constraint, r'GMainQuestsOnConflict', 'constraint'),
-              updateColumns: updateColumns.build(),
-              where: _where?.build());
+            constraint: BuiltValueNullFieldError.checkNotNull(
+                constraint, r'GMainQuestsOnConflict', 'constraint'),
+            updateColumns: updateColumns.build(),
+            where: _where?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -10289,19 +10313,20 @@ class GMainQuestsOrderByBuilder
   _$GMainQuestsOrderBy _build() {
     final _$result = _$v ??
         new _$GMainQuestsOrderBy._(
-            begunAt: begunAt,
-            categoryId: categoryId,
-            coverImageUrl: coverImageUrl,
-            createdAt: createdAt,
-            deletedAt: deletedAt,
-            description: description,
-            endedAt: endedAt,
-            id: id,
-            note: note,
-            status: status,
-            title: title,
-            updatedAt: updatedAt,
-            userId: userId);
+          begunAt: begunAt,
+          categoryId: categoryId,
+          coverImageUrl: coverImageUrl,
+          createdAt: createdAt,
+          deletedAt: deletedAt,
+          description: description,
+          endedAt: endedAt,
+          id: id,
+          note: note,
+          status: status,
+          title: title,
+          updatedAt: updatedAt,
+          userId: userId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -10388,8 +10413,9 @@ class GMainQuestsPkColumnsInputBuilder
   _$GMainQuestsPkColumnsInput _build() {
     final _$result = _$v ??
         new _$GMainQuestsPkColumnsInput._(
-            id: BuiltValueNullFieldError.checkNotNull(
-                id, r'GMainQuestsPkColumnsInput', 'id'));
+          id: BuiltValueNullFieldError.checkNotNull(
+              id, r'GMainQuestsPkColumnsInput', 'id'),
+        );
     replace(_$result);
     return _$result;
   }
@@ -10608,19 +10634,20 @@ class GMainQuestsSetInputBuilder
   _$GMainQuestsSetInput _build() {
     final _$result = _$v ??
         new _$GMainQuestsSetInput._(
-            begunAt: begunAt,
-            categoryId: categoryId,
-            coverImageUrl: coverImageUrl,
-            createdAt: createdAt,
-            deletedAt: deletedAt,
-            description: description,
-            endedAt: endedAt,
-            id: id,
-            note: note,
-            status: status,
-            title: title,
-            updatedAt: updatedAt,
-            userId: userId);
+          begunAt: begunAt,
+          categoryId: categoryId,
+          coverImageUrl: coverImageUrl,
+          createdAt: createdAt,
+          deletedAt: deletedAt,
+          description: description,
+          endedAt: endedAt,
+          id: id,
+          note: note,
+          status: status,
+          title: title,
+          updatedAt: updatedAt,
+          userId: userId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -10724,7 +10751,9 @@ class GMainQuestsStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GMainQuestsStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -10959,19 +10988,20 @@ class GMainQuestsStreamCursorValueInputBuilder
   _$GMainQuestsStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GMainQuestsStreamCursorValueInput._(
-            begunAt: begunAt,
-            categoryId: categoryId,
-            coverImageUrl: coverImageUrl,
-            createdAt: createdAt,
-            deletedAt: deletedAt,
-            description: description,
-            endedAt: endedAt,
-            id: id,
-            note: note,
-            status: status,
-            title: title,
-            updatedAt: updatedAt,
-            userId: userId);
+          begunAt: begunAt,
+          categoryId: categoryId,
+          coverImageUrl: coverImageUrl,
+          createdAt: createdAt,
+          deletedAt: deletedAt,
+          description: description,
+          endedAt: endedAt,
+          id: id,
+          note: note,
+          status: status,
+          title: title,
+          updatedAt: updatedAt,
+          userId: userId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -11072,7 +11102,9 @@ class GMainQuestsUpdatesBuilder
     try {
       _$result = _$v ??
           new _$GMainQuestsUpdates._(
-              G_set: _G_set?.build(), where: where.build());
+            G_set: _G_set?.build(),
+            where: where.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -11331,20 +11363,21 @@ class GNewsBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GNewsBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              content: _content?.build(),
-              coverImageUrl: _coverImageUrl?.build(),
-              createdAt: _createdAt?.build(),
-              excerpt: _excerpt?.build(),
-              id: _id?.build(),
-              publishedAt: _publishedAt?.build(),
-              seo: _seo?.build(),
-              seoId: _seoId?.build(),
-              slug: _slug?.build(),
-              title: _title?.build(),
-              updatedAt: _updatedAt?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            content: _content?.build(),
+            coverImageUrl: _coverImageUrl?.build(),
+            createdAt: _createdAt?.build(),
+            excerpt: _excerpt?.build(),
+            id: _id?.build(),
+            publishedAt: _publishedAt?.build(),
+            seo: _seo?.build(),
+            seoId: _seoId?.build(),
+            slug: _slug?.build(),
+            title: _title?.build(),
+            updatedAt: _updatedAt?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -11577,17 +11610,18 @@ class GNewsOrderByBuilder
     try {
       _$result = _$v ??
           new _$GNewsOrderBy._(
-              content: content,
-              coverImageUrl: coverImageUrl,
-              createdAt: createdAt,
-              excerpt: excerpt,
-              id: id,
-              publishedAt: publishedAt,
-              seo: _seo?.build(),
-              seoId: seoId,
-              slug: slug,
-              title: title,
-              updatedAt: updatedAt);
+            content: content,
+            coverImageUrl: coverImageUrl,
+            createdAt: createdAt,
+            excerpt: excerpt,
+            id: id,
+            publishedAt: publishedAt,
+            seo: _seo?.build(),
+            seoId: seoId,
+            slug: slug,
+            title: title,
+            updatedAt: updatedAt,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -11700,7 +11734,9 @@ class GNewsStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GNewsStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -11899,16 +11935,17 @@ class GNewsStreamCursorValueInputBuilder
   _$GNewsStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GNewsStreamCursorValueInput._(
-            content: content,
-            coverImageUrl: coverImageUrl,
-            createdAt: createdAt,
-            excerpt: excerpt,
-            id: id,
-            publishedAt: publishedAt,
-            seoId: seoId,
-            slug: slug,
-            title: title,
-            updatedAt: updatedAt);
+          content: content,
+          coverImageUrl: coverImageUrl,
+          createdAt: createdAt,
+          excerpt: excerpt,
+          id: id,
+          publishedAt: publishedAt,
+          seoId: seoId,
+          slug: slug,
+          title: title,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -12148,19 +12185,20 @@ class GNotificationsBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GNotificationsBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              content: _content?.build(),
-              coverImageUrl: _coverImageUrl?.build(),
-              createdAt: _createdAt?.build(),
-              excerpt: _excerpt?.build(),
-              firstOpenedAt: _firstOpenedAt?.build(),
-              id: _id?.build(),
-              publishedAt: _publishedAt?.build(),
-              title: _title?.build(),
-              updatedAt: _updatedAt?.build(),
-              userId: _userId?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            content: _content?.build(),
+            coverImageUrl: _coverImageUrl?.build(),
+            createdAt: _createdAt?.build(),
+            excerpt: _excerpt?.build(),
+            firstOpenedAt: _firstOpenedAt?.build(),
+            id: _id?.build(),
+            publishedAt: _publishedAt?.build(),
+            title: _title?.build(),
+            updatedAt: _updatedAt?.build(),
+            userId: _userId?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -12382,16 +12420,17 @@ class GNotificationsOrderByBuilder
   _$GNotificationsOrderBy _build() {
     final _$result = _$v ??
         new _$GNotificationsOrderBy._(
-            content: content,
-            coverImageUrl: coverImageUrl,
-            createdAt: createdAt,
-            excerpt: excerpt,
-            firstOpenedAt: firstOpenedAt,
-            id: id,
-            publishedAt: publishedAt,
-            title: title,
-            updatedAt: updatedAt,
-            userId: userId);
+          content: content,
+          coverImageUrl: coverImageUrl,
+          createdAt: createdAt,
+          excerpt: excerpt,
+          firstOpenedAt: firstOpenedAt,
+          id: id,
+          publishedAt: publishedAt,
+          title: title,
+          updatedAt: updatedAt,
+          userId: userId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -12498,7 +12537,9 @@ class GNotificationsStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GNotificationsStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -12702,16 +12743,17 @@ class GNotificationsStreamCursorValueInputBuilder
   _$GNotificationsStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GNotificationsStreamCursorValueInput._(
-            content: content,
-            coverImageUrl: coverImageUrl,
-            createdAt: createdAt,
-            excerpt: excerpt,
-            firstOpenedAt: firstOpenedAt,
-            id: id,
-            publishedAt: publishedAt,
-            title: title,
-            updatedAt: updatedAt,
-            userId: userId);
+          content: content,
+          coverImageUrl: coverImageUrl,
+          createdAt: createdAt,
+          excerpt: excerpt,
+          firstOpenedAt: firstOpenedAt,
+          id: id,
+          publishedAt: publishedAt,
+          title: title,
+          updatedAt: updatedAt,
+          userId: userId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -12902,15 +12944,16 @@ class GQuestCategoriesBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GQuestCategoriesBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              createdAt: _createdAt?.build(),
-              description: _description?.build(),
-              id: _id?.build(),
-              name: _name?.build(),
-              sortNumber: _sortNumber?.build(),
-              updatedAt: _updatedAt?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            createdAt: _createdAt?.build(),
+            description: _description?.build(),
+            id: _id?.build(),
+            name: _name?.build(),
+            sortNumber: _sortNumber?.build(),
+            updatedAt: _updatedAt?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -13079,12 +13122,13 @@ class GQuestCategoriesOrderByBuilder
   _$GQuestCategoriesOrderBy _build() {
     final _$result = _$v ??
         new _$GQuestCategoriesOrderBy._(
-            createdAt: createdAt,
-            description: description,
-            id: id,
-            name: name,
-            sortNumber: sortNumber,
-            updatedAt: updatedAt);
+          createdAt: createdAt,
+          description: description,
+          id: id,
+          name: name,
+          sortNumber: sortNumber,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -13194,7 +13238,9 @@ class GQuestCategoriesStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GQuestCategoriesStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -13354,12 +13400,13 @@ class GQuestCategoriesStreamCursorValueInputBuilder
   _$GQuestCategoriesStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GQuestCategoriesStreamCursorValueInput._(
-            createdAt: createdAt,
-            description: description,
-            id: id,
-            name: name,
-            sortNumber: sortNumber,
-            updatedAt: updatedAt);
+          createdAt: createdAt,
+          description: description,
+          id: id,
+          name: name,
+          sortNumber: sortNumber,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -13480,10 +13527,11 @@ class GQuestStatusBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GQuestStatusBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              value: _value?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            value: _value?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -13632,11 +13680,12 @@ class GQuestStatusEnumComparisonExpBuilder
     try {
       _$result = _$v ??
           new _$GQuestStatusEnumComparisonExp._(
-              G_eq: G_eq,
-              G_in: _G_in?.build(),
-              G_isNull: G_isNull,
-              G_neq: G_neq,
-              G_nin: _G_nin?.build());
+            G_eq: G_eq,
+            G_in: _G_in?.build(),
+            G_isNull: G_isNull,
+            G_neq: G_neq,
+            G_nin: _G_nin?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -13731,7 +13780,10 @@ class GQuestStatusOrderByBuilder
   GQuestStatusOrderBy build() => _build();
 
   _$GQuestStatusOrderBy _build() {
-    final _$result = _$v ?? new _$GQuestStatusOrderBy._(value: value);
+    final _$result = _$v ??
+        new _$GQuestStatusOrderBy._(
+          value: value,
+        );
     replace(_$result);
     return _$result;
   }
@@ -13835,7 +13887,9 @@ class GQuestStatusStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GQuestStatusStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -13933,8 +13987,10 @@ class GQuestStatusStreamCursorValueInputBuilder
   GQuestStatusStreamCursorValueInput build() => _build();
 
   _$GQuestStatusStreamCursorValueInput _build() {
-    final _$result =
-        _$v ?? new _$GQuestStatusStreamCursorValueInput._(value: value);
+    final _$result = _$v ??
+        new _$GQuestStatusStreamCursorValueInput._(
+          value: value,
+        );
     replace(_$result);
     return _$result;
   }
@@ -14119,15 +14175,16 @@ class GSeosBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GSeosBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              createdAt: _createdAt?.build(),
-              description: _description?.build(),
-              id: _id?.build(),
-              ogImageUrl: _ogImageUrl?.build(),
-              title: _title?.build(),
-              updatedAt: _updatedAt?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            createdAt: _createdAt?.build(),
+            description: _description?.build(),
+            id: _id?.build(),
+            ogImageUrl: _ogImageUrl?.build(),
+            title: _title?.build(),
+            updatedAt: _updatedAt?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -14292,12 +14349,13 @@ class GSeosOrderByBuilder
   _$GSeosOrderBy _build() {
     final _$result = _$v ??
         new _$GSeosOrderBy._(
-            createdAt: createdAt,
-            description: description,
-            id: id,
-            ogImageUrl: ogImageUrl,
-            title: title,
-            updatedAt: updatedAt);
+          createdAt: createdAt,
+          description: description,
+          id: id,
+          ogImageUrl: ogImageUrl,
+          title: title,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -14399,7 +14457,9 @@ class GSeosStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GSeosStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -14553,12 +14613,13 @@ class GSeosStreamCursorValueInputBuilder
   _$GSeosStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GSeosStreamCursorValueInput._(
-            createdAt: createdAt,
-            description: description,
-            id: id,
-            ogImageUrl: ogImageUrl,
-            title: title,
-            updatedAt: updatedAt);
+          createdAt: createdAt,
+          description: description,
+          id: id,
+          ogImageUrl: ogImageUrl,
+          title: title,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -14844,25 +14905,26 @@ class GStringComparisonExpBuilder
     try {
       _$result = _$v ??
           new _$GStringComparisonExp._(
-              G_eq: G_eq,
-              G_gt: G_gt,
-              G_gte: G_gte,
-              G_ilike: G_ilike,
-              G_in: _G_in?.build(),
-              G_iregex: G_iregex,
-              G_isNull: G_isNull,
-              G_like: G_like,
-              G_lt: G_lt,
-              G_lte: G_lte,
-              G_neq: G_neq,
-              G_nilike: G_nilike,
-              G_nin: _G_nin?.build(),
-              G_niregex: G_niregex,
-              G_nlike: G_nlike,
-              G_nregex: G_nregex,
-              G_nsimilar: G_nsimilar,
-              G_regex: G_regex,
-              G_similar: G_similar);
+            G_eq: G_eq,
+            G_gt: G_gt,
+            G_gte: G_gte,
+            G_ilike: G_ilike,
+            G_in: _G_in?.build(),
+            G_iregex: G_iregex,
+            G_isNull: G_isNull,
+            G_like: G_like,
+            G_lt: G_lt,
+            G_lte: G_lte,
+            G_neq: G_neq,
+            G_nilike: G_nilike,
+            G_nin: _G_nin?.build(),
+            G_niregex: G_niregex,
+            G_nlike: G_nlike,
+            G_nregex: G_nregex,
+            G_nsimilar: G_nsimilar,
+            G_regex: G_regex,
+            G_similar: G_similar,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -15048,14 +15110,15 @@ class GTagsBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GTagsBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              createdAt: _createdAt?.build(),
-              description: _description?.build(),
-              id: _id?.build(),
-              tag: _tag?.build(),
-              updatedAt: _updatedAt?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            createdAt: _createdAt?.build(),
+            description: _description?.build(),
+            id: _id?.build(),
+            tag: _tag?.build(),
+            updatedAt: _updatedAt?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -15203,11 +15266,12 @@ class GTagsOrderByBuilder
   _$GTagsOrderBy _build() {
     final _$result = _$v ??
         new _$GTagsOrderBy._(
-            createdAt: createdAt,
-            description: description,
-            id: id,
-            tag: tag,
-            updatedAt: updatedAt);
+          createdAt: createdAt,
+          description: description,
+          id: id,
+          tag: tag,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -15309,7 +15373,9 @@ class GTagsStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GTagsStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -15448,11 +15514,12 @@ class GTagsStreamCursorValueInputBuilder
   _$GTagsStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GTagsStreamCursorValueInput._(
-            createdAt: createdAt,
-            description: description,
-            id: id,
-            tag: tag,
-            updatedAt: updatedAt);
+          createdAt: createdAt,
+          description: description,
+          id: id,
+          tag: tag,
+          updatedAt: updatedAt,
+        );
     replace(_$result);
     return _$result;
   }
@@ -15631,15 +15698,16 @@ class GTimestamptzComparisonExpBuilder
     try {
       _$result = _$v ??
           new _$GTimestamptzComparisonExp._(
-              G_eq: G_eq,
-              G_gt: G_gt,
-              G_gte: G_gte,
-              G_in: _G_in?.build(),
-              G_isNull: G_isNull,
-              G_lt: G_lt,
-              G_lte: G_lte,
-              G_neq: G_neq,
-              G_nin: _G_nin?.build());
+            G_eq: G_eq,
+            G_gt: G_gt,
+            G_gte: G_gte,
+            G_in: _G_in?.build(),
+            G_isNull: G_isNull,
+            G_lt: G_lt,
+            G_lte: G_lte,
+            G_neq: G_neq,
+            G_nin: _G_nin?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -15789,11 +15857,12 @@ class GUserAchievementsBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GUserAchievementsBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              achievementId: _achievementId?.build(),
-              userId: _userId?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            achievementId: _achievementId?.build(),
+            userId: _userId?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -15908,7 +15977,9 @@ class GUserAchievementsOrderByBuilder
   _$GUserAchievementsOrderBy _build() {
     final _$result = _$v ??
         new _$GUserAchievementsOrderBy._(
-            achievementId: achievementId, userId: userId);
+          achievementId: achievementId,
+          userId: userId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -16019,7 +16090,9 @@ class GUserAchievementsStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GUserAchievementsStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -16134,7 +16207,9 @@ class GUserAchievementsStreamCursorValueInputBuilder
   _$GUserAchievementsStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GUserAchievementsStreamCursorValueInput._(
-            achievementId: achievementId, userId: userId);
+          achievementId: achievementId,
+          userId: userId,
+        );
     replace(_$result);
     return _$result;
   }
@@ -16359,18 +16434,19 @@ class GUsersBoolExpBuilder
     try {
       _$result = _$v ??
           new _$GUsersBoolExp._(
-              G_and: _G_and?.build(),
-              G_not: _G_not?.build(),
-              G_or: _G_or?.build(),
-              createdAt: _createdAt?.build(),
-              email: _email?.build(),
-              id: _id?.build(),
-              lastSeen: _lastSeen?.build(),
-              nickname: _nickname?.build(),
-              picture: _picture?.build(),
-              updatedAt: _updatedAt?.build(),
-              username: _username?.build(),
-              website: _website?.build());
+            G_and: _G_and?.build(),
+            G_not: _G_not?.build(),
+            G_or: _G_or?.build(),
+            createdAt: _createdAt?.build(),
+            email: _email?.build(),
+            id: _id?.build(),
+            lastSeen: _lastSeen?.build(),
+            nickname: _nickname?.build(),
+            picture: _picture?.build(),
+            updatedAt: _updatedAt?.build(),
+            username: _username?.build(),
+            website: _website?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -16574,15 +16650,16 @@ class GUsersOrderByBuilder
   _$GUsersOrderBy _build() {
     final _$result = _$v ??
         new _$GUsersOrderBy._(
-            createdAt: createdAt,
-            email: email,
-            id: id,
-            lastSeen: lastSeen,
-            nickname: nickname,
-            picture: picture,
-            updatedAt: updatedAt,
-            username: username,
-            website: website);
+          createdAt: createdAt,
+          email: email,
+          id: id,
+          lastSeen: lastSeen,
+          nickname: nickname,
+          picture: picture,
+          updatedAt: updatedAt,
+          username: username,
+          website: website,
+        );
     replace(_$result);
     return _$result;
   }
@@ -16685,7 +16762,9 @@ class GUsersStreamCursorInputBuilder
     try {
       _$result = _$v ??
           new _$GUsersStreamCursorInput._(
-              initialValue: initialValue.build(), ordering: ordering);
+            initialValue: initialValue.build(),
+            ordering: ordering,
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -16872,15 +16951,16 @@ class GUsersStreamCursorValueInputBuilder
   _$GUsersStreamCursorValueInput _build() {
     final _$result = _$v ??
         new _$GUsersStreamCursorValueInput._(
-            createdAt: createdAt,
-            email: email,
-            id: id,
-            lastSeen: lastSeen,
-            nickname: nickname,
-            picture: picture,
-            updatedAt: updatedAt,
-            username: username,
-            website: website);
+          createdAt: createdAt,
+          email: email,
+          id: id,
+          lastSeen: lastSeen,
+          nickname: nickname,
+          picture: picture,
+          updatedAt: updatedAt,
+          username: username,
+          website: website,
+        );
     replace(_$result);
     return _$result;
   }
@@ -17056,15 +17136,16 @@ class GUuidComparisonExpBuilder
     try {
       _$result = _$v ??
           new _$GUuidComparisonExp._(
-              G_eq: G_eq,
-              G_gt: G_gt,
-              G_gte: G_gte,
-              G_in: _G_in?.build(),
-              G_isNull: G_isNull,
-              G_lt: G_lt,
-              G_lte: G_lte,
-              G_neq: G_neq,
-              G_nin: _G_nin?.build());
+            G_eq: G_eq,
+            G_gt: G_gt,
+            G_gte: G_gte,
+            G_in: _G_in?.build(),
+            G_isNull: G_isNull,
+            G_lt: G_lt,
+            G_lte: G_lte,
+            G_neq: G_neq,
+            G_nin: _G_nin?.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {

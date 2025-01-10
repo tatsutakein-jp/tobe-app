@@ -9,16 +9,19 @@
 // **************************************************************************
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:app_catalog/designsystem/component/brand_icon.dart' as _i3;
-import 'package:app_catalog/designsystem/component/card.dart' as _i4;
-import 'package:app_catalog/designsystem/component/scaffold.dart' as _i2;
-import 'package:app_catalog/feature/auth/page/auth_page.dart' as _i5;
-import 'package:app_catalog/feature/home/page/home_page.dart' as _i6;
-import 'package:app_catalog/feature/my/page/settings_page.dart' as _i7;
-import 'package:app_catalog/feature/quest/page/quest_add_page.dart' as _i8;
-import 'package:app_catalog/feature/quest/page/quest_detail_page.dart' as _i9;
-import 'package:app_catalog/feature/quest/page/quest_page.dart' as _i10;
-import 'package:app_catalog/ui/component/quest_list_tile.dart' as _i11;
+import 'package:app_catalog/designsystem/component/brand_icon.dart' as _i2;
+import 'package:app_catalog/designsystem/component/card.dart' as _i3;
+import 'package:app_catalog/designsystem/component/scaffold.dart' as _i4;
+import 'package:app_catalog/feature/auth/screen/auth_screen.dart' as _i5;
+import 'package:app_catalog/feature/home/screen/home_screen.dart' as _i6;
+import 'package:app_catalog/feature/my/screen/settings_screen.dart' as _i7;
+import 'package:app_catalog/feature/onboarding/screen/onboarding_screen.dart'
+    as _i8;
+import 'package:app_catalog/feature/quest/screen/quest_add_screen.dart' as _i9;
+import 'package:app_catalog/feature/quest/screen/quest_detail_screen.dart'
+    as _i10;
+import 'package:app_catalog/feature/quest/screen/quest_screen.dart' as _i11;
+import 'package:app_catalog/ui/component/quest_list_tile.dart' as _i12;
 import 'package:widgetbook/widgetbook.dart' as _i1;
 
 final directories = <_i1.WidgetbookNode>[
@@ -29,23 +32,23 @@ final directories = <_i1.WidgetbookNode>[
         name: 'components',
         children: [
           _i1.WidgetbookLeafComponent(
-            name: 'TobeScaffold',
-            useCase: _i1.WidgetbookUseCase(
-              name: 'TobeScaffold',
-              builder: _i2.tobeScaffoldUseCase,
-            ),
-          ),
-          _i1.WidgetbookLeafComponent(
             name: 'BrandIcon',
             useCase: _i1.WidgetbookUseCase(
               name: 'BrandIcon',
-              builder: _i3.tobeScaffoldUseCase,
+              builder: _i2.tobeScaffoldUseCase,
             ),
           ),
           _i1.WidgetbookLeafComponent(
             name: 'TappableCard',
             useCase: _i1.WidgetbookUseCase(
               name: 'TappableCard',
+              builder: _i3.tobeScaffoldUseCase,
+            ),
+          ),
+          _i1.WidgetbookLeafComponent(
+            name: 'TobeScaffold',
+            useCase: _i1.WidgetbookUseCase(
+              name: 'TobeScaffold',
               builder: _i4.tobeScaffoldUseCase,
             ),
           ),
@@ -60,10 +63,10 @@ final directories = <_i1.WidgetbookNode>[
         name: 'auth',
         children: [
           _i1.WidgetbookLeafComponent(
-            name: 'AuthPage',
+            name: 'AuthScreen',
             useCase: _i1.WidgetbookUseCase(
-              name: 'AuthPage',
-              builder: _i5.authPageUseCase,
+              name: 'AuthScreen',
+              builder: _i5.authScreenUseCase,
             ),
           )
         ],
@@ -72,10 +75,10 @@ final directories = <_i1.WidgetbookNode>[
         name: 'home',
         children: [
           _i1.WidgetbookLeafComponent(
-            name: 'HomePage',
+            name: 'HomeScreen',
             useCase: _i1.WidgetbookUseCase(
-              name: 'HomePage',
-              builder: _i6.homePageUseCase,
+              name: 'HomeScreen',
+              builder: _i6.homeScreenUseCase,
             ),
           )
         ],
@@ -84,10 +87,22 @@ final directories = <_i1.WidgetbookNode>[
         name: 'my',
         children: [
           _i1.WidgetbookLeafComponent(
-            name: 'SettingsPage',
+            name: 'SettingsScreen',
             useCase: _i1.WidgetbookUseCase(
-              name: 'SettingsPage',
-              builder: _i7.settingsPageUseCase,
+              name: 'SettingsScreen',
+              builder: _i7.settingsScreenUseCase,
+            ),
+          )
+        ],
+      ),
+      _i1.WidgetbookFolder(
+        name: 'onboarding',
+        children: [
+          _i1.WidgetbookLeafComponent(
+            name: 'OnboardingScreen',
+            useCase: _i1.WidgetbookUseCase(
+              name: 'OnboardingScreen',
+              builder: _i8.onboardingScreenUseCase,
             ),
           )
         ],
@@ -96,24 +111,24 @@ final directories = <_i1.WidgetbookNode>[
         name: 'quest',
         children: [
           _i1.WidgetbookLeafComponent(
-            name: 'QuestAddPage',
+            name: 'QuestAddScreen',
             useCase: _i1.WidgetbookUseCase(
-              name: 'QuestAddPage',
-              builder: _i8.questAddPageUseCase,
+              name: 'QuestAddScreen',
+              builder: _i9.questAddScreenUseCase,
             ),
           ),
           _i1.WidgetbookLeafComponent(
-            name: 'QuestDetailPage',
+            name: 'QuestDetailScreen',
             useCase: _i1.WidgetbookUseCase(
-              name: 'QuestDetailPage',
-              builder: _i9.questPageUseCase,
+              name: 'QuestDetailScreen',
+              builder: _i10.questDetailScreenUseCase,
             ),
           ),
           _i1.WidgetbookLeafComponent(
-            name: 'QuestListPage',
+            name: 'QuestListScreen',
             useCase: _i1.WidgetbookUseCase(
-              name: 'QuestPage',
-              builder: _i10.questPageUseCase,
+              name: 'QuestListScreen',
+              builder: _i11.questListScreenUseCase,
             ),
           ),
         ],
@@ -130,7 +145,7 @@ final directories = <_i1.WidgetbookNode>[
             name: 'QuestListTile',
             useCase: _i1.WidgetbookUseCase(
               name: 'QuestListTile',
-              builder: _i11.tobeScaffoldUseCase,
+              builder: _i12.tobeScaffoldUseCase,
             ),
           )
         ],

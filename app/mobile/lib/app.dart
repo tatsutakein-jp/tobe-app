@@ -1,13 +1,13 @@
-import 'package:core_designsystem/theme.dart';
-import 'package:core_domain/user_settings_use_case.dart';
-import 'package:dynamic_color/dynamic_color.dart';
-import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:app_mobile/extension/theme.dart';
 import 'package:app_mobile/l10n/l10n.dart';
 import 'package:app_mobile/router/app_router.dart';
 import 'package:app_mobile/ui/app_force_updatable.dart';
 import 'package:app_mobile/ui/toast.dart';
+import 'package:core_designsystem/theme.dart';
+import 'package:core_domain/user_settings_use_case.dart';
+import 'package:dynamic_color/dynamic_color.dart';
+import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final class TobeApp extends ConsumerWidget {
   const TobeApp({super.key});

@@ -5,7 +5,7 @@ final class QuestListRoute extends GoRouteData {
   const QuestListRoute();
 
   @override
-  Widget build(BuildContext context, GoRouterState state) => QuestListPage(
+  Widget build(BuildContext context, GoRouterState state) => QuestListScreen(
         onTapQuestListItem: (quest) {
           QuestDetailRoute(questId: quest.id).go(context);
         },
@@ -23,8 +23,8 @@ final class QuestDetailRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return QuestDetailPage(
-      questId: questId,
+    return QuestDetailScreen(
+      id: questId,
     );
   }
 }
@@ -35,7 +35,7 @@ final class QuestAddRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return QuestAddPage(
+    return QuestAddScreen(
       onAddQuestCompleted: () => context.pop(),
     );
   }
