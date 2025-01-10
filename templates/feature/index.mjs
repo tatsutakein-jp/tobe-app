@@ -61,7 +61,7 @@ export function generateFeaturePackage() {
           "templates/feature/template/test/feature_name_test.dart.hbs",
       },
       {
-        type: "melosBootstrap",
+        type: "dartPubGet",
       },
     ],
   };

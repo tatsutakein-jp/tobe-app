@@ -7,44 +7,29 @@ environment:
   sdk: 3.6.0
   flutter: 3.27.1
 
+resolution: workspace
+
 dependencies:
-  core_analytics_firebase:
-    path: ../../core/analytics_firebase
-  core_authenticator:
-    path: ../../core/authenticator
-  core_common:
-    path: ../../core/common
-  core_database_isar:
-    path: ../../core/database_isar
-  core_datastore:
-    path: ../../core/datastore
-  core_designsystem:
-    path: ../../core/designsystem
-  core_domain:
-    path: ../../core/domain
-  core_model:
-    path: ../../core/model
-  core_network:
-    path: ../../core/network
-  core_ui:
-    path: ../../core/ui
+  core_analytics_firebase: any
+  core_authenticator: any
+  core_common: any
+  core_database_isar: any
+  core_datastore: any
+  core_designsystem: any
+  core_domain: any
+  core_model: any
+  core_network: any
+  core_ui: any
   cupertino_icons: 1.0.8
   dynamic_color: 1.7.0
   envied: 1.0.0
-  feature_auth:
-    path: ../../feature/auth
-  feature_debug:
-    path: ../../feature/debug
-  feature_feed:
-    path: ../../feature/feed
-  feature_home:
-    path: ../../feature/home
-  feature_onboarding:
-    path: ../../feature/onboarding
-  feature_quest:
-    path: ../../feature/quest
-  feature_settings:
-    path: ../../feature/settings
+  feature_auth: any
+  feature_debug: any
+  feature_feed: any
+  feature_home: any
+  feature_onboarding: any
+  feature_quest: any
+  feature_settings: any
   firebase_analytics: 11.3.5
   firebase_auth: 5.3.3
   firebase_core: 3.8.0
@@ -68,14 +53,6 @@ dependencies:
   riverpod_annotation: 2.6.1
   shared_preferences: 2.3.3
   url_launcher: 6.3.1
-
-dependency_overrides:
-  # workaround
-  # So, because feature_quest depends on both flutter_test from sdk and riverpod_generator 2.4.2, version solving failed.
-  meta: 1.15.0
-  # workaround
-  # https://stackoverflow.com/questions/77947590/error-the-type-jsobject-cant-be-used-as-supertype-while-deploying-flutter
-  web: 0.4.2
 
 dev_dependencies:
   build_runner: 2.4.13

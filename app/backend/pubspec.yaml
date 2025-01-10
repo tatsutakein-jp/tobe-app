@@ -6,10 +6,11 @@ publish_to: none
 environment:
   sdk: 3.6.0
 
+resolution: workspace
+
 dependencies:
   built_value: 8.9.2
-  core_network_model:
-    path: ../../core/network_model
+  core_network_model: any
   dart_frog: 1.1.0
   dotenv: 4.2.0
   ferry: 0.16.0+1

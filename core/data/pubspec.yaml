@@ -1,28 +1,23 @@
 name: core_data
 description: This package provides the repository layer.
-version: 1.0.0
 publish_to: "none"
 
 environment:
   sdk: 3.6.0
 
+resolution: workspace
+
 dependencies:
-  core_common:
-    path: ../common
-  core_database:
-    path: ../database
-  core_datastore:
-    path: ../datastore
-  core_model:
-    path: ../model
-  core_network:
-    path: ../network
+  core_common: any
+  core_database: any
+  core_datastore: any
+  core_model: any
+  core_network: any
   riverpod_annotation: 2.6.1
 
 dev_dependencies:
   build_runner: 2.4.13
-  core_testing:
-    path: ../testing
+  core_testing: any
   riverpod_generator: 2.6.3
   test: 1.25.8
   yumemi_lints: 2.2.0

@@ -7,25 +7,19 @@ environment:
   sdk: 3.6.0
   flutter: 3.27.1
 
+resolution: workspace
+
 dependencies:
-  core_designsystem:
-    path: ../../core/designsystem
-  core_model:
-    path: ../../core/model
-  core_ui:
-    path: ../../core/ui
+  core_designsystem: any
+  core_model: any
+  core_ui: any
   cupertino_icons: 1.0.8
   dynamic_color: 1.7.0
-  feature_auth:
-    path: ../../feature/auth
-  feature_feed:
-    path: ../../feature/feed
-  feature_home:
-    path: ../../feature/home
-  feature_quest:
-    path: ../../feature/quest
-  feature_settings:
-    path: ../../feature/settings
+  feature_auth: any
+  feature_feed: any
+  feature_home: any
+  feature_quest: any
+  feature_settings: any
   flutter:
     sdk: flutter
   flutter_riverpod: 2.6.1

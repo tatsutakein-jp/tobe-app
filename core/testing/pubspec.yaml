@@ -1,16 +1,15 @@
 name: core_testing
 description: This package provides convenience functions for testing, etc.
-version: 1.0.0
 publish_to: "none"
 
 environment:
   sdk: 3.6.0
 
+resolution: workspace
+
 dependencies:
-  core_common:
-    path: ../common
-  core_model:
-    path: ../model
+  core_common: any
+  core_model: any
   mocktail: 1.0.4
   riverpod: 2.6.1
 
