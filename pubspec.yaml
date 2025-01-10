@@ -43,5 +43,6 @@ dependency_overrides:
   file: 7.0.0
   meta: 1.15.0
   path: 1.9.1
+  source_gen: 1.5.0
   test_api: 0.7.2
   web: 0.4.2
