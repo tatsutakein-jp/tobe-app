@@ -1,4 +1,4 @@
-/// アプリ内で使用するページのパス
+/// アプリ内で使用する画面のパス
 final class AppPagePath {
   static const auth = '/auth';
   static const onboarding = '/onboarding';

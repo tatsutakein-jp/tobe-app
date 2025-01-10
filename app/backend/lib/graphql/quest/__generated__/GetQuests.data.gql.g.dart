@@ -285,9 +285,10 @@ class GGetQuestsDataBuilder
     try {
       _$result = _$v ??
           new _$GGetQuestsData._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, r'GGetQuestsData', 'G__typename'),
-              mainQuests: mainQuests.build());
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, r'GGetQuestsData', 'G__typename'),
+            mainQuests: mainQuests.build(),
+          );
     } catch (_) {
       late String _$failedField;
       try {
@@ -500,22 +501,23 @@ class GGetQuestsData_mainQuestsBuilder
   _$GGetQuestsData_mainQuests _build() {
     final _$result = _$v ??
         new _$GGetQuestsData_mainQuests._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GGetQuestsData_mainQuests', 'G__typename'),
-            id: BuiltValueNullFieldError.checkNotNull(
-                id, r'GGetQuestsData_mainQuests', 'id'),
-            title: BuiltValueNullFieldError.checkNotNull(
-                title, r'GGetQuestsData_mainQuests', 'title'),
-            description: BuiltValueNullFieldError.checkNotNull(
-                description, r'GGetQuestsData_mainQuests', 'description'),
-            begunAt: begunAt,
-            endedAt: endedAt,
-            categoryId: categoryId,
-            status: BuiltValueNullFieldError.checkNotNull(
-                status, r'GGetQuestsData_mainQuests', 'status'),
-            coverImageUrl: coverImageUrl,
-            note: BuiltValueNullFieldError.checkNotNull(
-                note, r'GGetQuestsData_mainQuests', 'note'));
+          G__typename: BuiltValueNullFieldError.checkNotNull(
+              G__typename, r'GGetQuestsData_mainQuests', 'G__typename'),
+          id: BuiltValueNullFieldError.checkNotNull(
+              id, r'GGetQuestsData_mainQuests', 'id'),
+          title: BuiltValueNullFieldError.checkNotNull(
+              title, r'GGetQuestsData_mainQuests', 'title'),
+          description: BuiltValueNullFieldError.checkNotNull(
+              description, r'GGetQuestsData_mainQuests', 'description'),
+          begunAt: begunAt,
+          endedAt: endedAt,
+          categoryId: categoryId,
+          status: BuiltValueNullFieldError.checkNotNull(
+              status, r'GGetQuestsData_mainQuests', 'status'),
+          coverImageUrl: coverImageUrl,
+          note: BuiltValueNullFieldError.checkNotNull(
+              note, r'GGetQuestsData_mainQuests', 'note'),
+        );
     replace(_$result);
     return _$result;
   }

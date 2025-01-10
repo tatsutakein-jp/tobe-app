@@ -25,7 +25,8 @@ UpdateVersion _resolveUpdateVersion(FirebaseRemoteConfig firebaseRemoteConfig) {
 
   final updateVersions = jsonDecode(
     firebaseRemoteConfig.getString(appVersionsKey),
-  );
+  ) as Map<String, dynamic>;
+
   return UpdateVersion(
     force: AppVersion.parse(updateVersions['force'] as String),
     optional: AppVersion.parse(updateVersions['optional'] as String),

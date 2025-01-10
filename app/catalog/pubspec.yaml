@@ -18,6 +18,7 @@ dependencies:
   feature_auth: any
   feature_feed: any
   feature_home: any
+  feature_onboarding: any
   feature_quest: any
   feature_settings: any
   flutter:

@@ -1,11 +1,11 @@
 part of 'package:app_mobile/router/app_router.dart';
 
-/// 設定ページへのルート
+/// 設定画面へのルート
 final class SettingsRoute extends GoRouteData {
   const SettingsRoute();
 
   @override
-  Widget build(BuildContext context, GoRouterState state) => SettingsPage(
+  Widget build(BuildContext context, GoRouterState state) => SettingsScreen(
         onTapThemeSetting: () => const ThemeSettingDialogRoute().go(context),
         onTapOpenSourceLicense: () => const LicenseRoute().go(context),
         onSignOutSuccess: () => const AuthRoute().go(context),
@@ -21,14 +21,14 @@ final class ThemeSettingDialogRoute extends GoRouteData {
   @override
   DialogPage<void> buildPage(BuildContext context, GoRouterState state) =>
       DialogPage<void>(
-        builder: (context) => ThemeSettingDialogPage(
+        builder: (context) => ThemeSettingDialogScreen(
           onTapPositive: () => context.pop(),
           onTapNegative: () => context.pop(),
         ),
       );
 }
 
-/// ライセンスページへのルート
+/// ライセンス画面へのルート
 final class LicenseRoute extends GoRouteData {
   const LicenseRoute();
 

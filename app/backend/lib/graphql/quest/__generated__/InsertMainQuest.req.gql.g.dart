@@ -338,18 +338,19 @@ class GInsertMainQuestReqBuilder
     try {
       _$result = _$v ??
           new _$GInsertMainQuestReq._(
-              vars: vars.build(),
-              operation: BuiltValueNullFieldError.checkNotNull(
-                  operation, r'GInsertMainQuestReq', 'operation'),
-              requestId: requestId,
-              updateResult: updateResult,
-              optimisticResponse: _optimisticResponse?.build(),
-              updateCacheHandlerKey: updateCacheHandlerKey,
-              updateCacheHandlerContext: updateCacheHandlerContext,
-              fetchPolicy: fetchPolicy,
-              executeOnListen: BuiltValueNullFieldError.checkNotNull(
-                  executeOnListen, r'GInsertMainQuestReq', 'executeOnListen'),
-              context: context);
+            vars: vars.build(),
+            operation: BuiltValueNullFieldError.checkNotNull(
+                operation, r'GInsertMainQuestReq', 'operation'),
+            requestId: requestId,
+            updateResult: updateResult,
+            optimisticResponse: _optimisticResponse?.build(),
+            updateCacheHandlerKey: updateCacheHandlerKey,
+            updateCacheHandlerContext: updateCacheHandlerContext,
+            fetchPolicy: fetchPolicy,
+            executeOnListen: BuiltValueNullFieldError.checkNotNull(
+                executeOnListen, r'GInsertMainQuestReq', 'executeOnListen'),
+            context: context,
+          );
     } catch (_) {
       late String _$failedField;
       try {

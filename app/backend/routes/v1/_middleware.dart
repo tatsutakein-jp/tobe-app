@@ -34,7 +34,7 @@ Handler middleware(Handler handler) {
                 ),
                 HttpAuthLink(
                   url: env.backendUrl,
-                )
+                ),
               ],
             ),
             cache: Cache(),
