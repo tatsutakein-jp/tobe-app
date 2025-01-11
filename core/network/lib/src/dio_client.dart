@@ -1,12 +1,13 @@
 import 'package:core_authenticator/authenticator.dart';
 import 'package:core_model/config.dart';
 import 'package:dio/dio.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'dio_client.g.dart';
 
 @Riverpod(keepAlive: true)
-Dio dioClient(DioClientRef ref) {
+Dio dioClient(Ref ref) {
   final appConfig = ref.watch(appConfigProvider);
   final authenticator = ref.watch(authenticatorProvider);
 

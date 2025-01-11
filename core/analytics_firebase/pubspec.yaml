@@ -12,6 +12,7 @@ dependencies:
   core_analytics: any
   core_common: any
   firebase_analytics: 11.3.5
+  riverpod: 2.6.1
   riverpod_annotation: 2.6.1
 
 dev_dependencies:

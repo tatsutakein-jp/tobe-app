@@ -7,7 +7,7 @@ part of 'quest_stream_by_id_use_case.dart';
 // **************************************************************************
 
 String _$questStreamByIdUseCaseHash() =>
-    r'8af82616e8487be9beedab3c82685d7ba605e259';
+    r'72163c06f90abe5f168bea9b0b710aa2e7fb4147';
 
 /// Copied from Dart SDK
 class _SystemHash {

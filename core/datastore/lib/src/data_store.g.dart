@@ -6,7 +6,7 @@ part of 'data_store.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$dataStoreHash() => r'bd2f19d4a012a6ba4d3e1e8a4855f6e1e248493c';
+String _$dataStoreHash() => r'464523b7a4205b8ddbf6653d4b6392fbfe393463';
 
 /// DataStore instance
 ///

@@ -6,7 +6,7 @@ part of 'quest_dao.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$questDaoHash() => r'00a3708eb0aef3edd7ec6008432434b20f3f3bef';
+String _$questDaoHash() => r'9fee4cd06c78399b499d0ff34997e0d8797bae19';
 
 /// See also [questDao].
 @ProviderFor(questDao)

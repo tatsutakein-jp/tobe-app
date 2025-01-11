@@ -7,7 +7,7 @@ part of 'fetch_agreed_rule_version_use_case.dart';
 // **************************************************************************
 
 String _$fetchAgreedRuleVersionUseCaseHash() =>
-    r'48cf68fc51f557465e47ba8134ee253c19028b00';
+    r'f0983e56319bb0b485ccf51c6f63dd84f4d45301';
 
 /// 同意日時を取得する
 ///

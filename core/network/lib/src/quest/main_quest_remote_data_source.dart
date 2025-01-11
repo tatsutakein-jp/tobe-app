@@ -3,15 +3,13 @@ import 'package:core_network/quest.dart';
 import 'package:core_network/src/dio_client.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'main_quest_remote_data_source.g.dart';
 
 @Riverpod(keepAlive: true)
-QuestRemoteDataSource questRemoteDataSource(
-  QuestRemoteDataSourceRef ref,
-) =>
-    QuestRemoteDataSource(
+QuestRemoteDataSource questRemoteDataSource(Ref ref) => QuestRemoteDataSource(
       ref.watch(dioClientProvider),
     );
 

@@ -13,6 +13,7 @@ dependencies:
   core_datastore: any
   core_model: any
   core_network: any
+  riverpod: 2.6.1
   riverpod_annotation: 2.6.1
 
 dev_dependencies:

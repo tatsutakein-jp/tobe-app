@@ -1,13 +1,13 @@
 import 'package:core_model/src/config/update_version.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'remote_config.freezed.dart';
-
 part 'remote_config.g.dart';
 
 @Riverpod(keepAlive: true)
-RemoteConfig remoteConfig(RemoteConfigRef ref) {
+RemoteConfig remoteConfig(Ref ref) {
   throw UnimplementedError('remoteConfig');
 }
 

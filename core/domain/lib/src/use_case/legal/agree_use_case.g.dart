@@ -6,7 +6,7 @@ part of 'agree_use_case.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$agreeUseCaseHash() => r'04c2e204574ac470041ac503baa70f83e3800f28';
+String _$agreeUseCaseHash() => r'34b1bed10dbe8bcdb4e3a9f3dac13465026fd35f';
 
 /// Copied from Dart SDK
 class _SystemHash {

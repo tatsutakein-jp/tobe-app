@@ -7,7 +7,7 @@ part of 'feed_list_stream_use_case.dart';
 // **************************************************************************
 
 String _$feedListStreamUseCaseHash() =>
-    r'308a0a6a470704abac36731fc500c2732c98b39b';
+    r'dc91bcfb4813297aa3d948f985521e38a106c6fe';
 
 /// お知らせ一覧を取得する ユースケース
 ///

@@ -9,6 +9,7 @@ resolution: workspace
 
 dependencies:
   core_common: any
+  riverpod: 2.6.1
   riverpod_annotation: 2.6.1
 
 dev_dependencies:

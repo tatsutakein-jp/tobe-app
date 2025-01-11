@@ -7,7 +7,7 @@ part of 'update_theme_use_case.dart';
 // **************************************************************************
 
 String _$updateThemeUseCaseHash() =>
-    r'15743c202dada7bd25f2e4289d498291ffad0db0';
+    r'e9003d481cd5766f847d10667480b305dc75e7e5';
 
 /// Copied from Dart SDK
 class _SystemHash {

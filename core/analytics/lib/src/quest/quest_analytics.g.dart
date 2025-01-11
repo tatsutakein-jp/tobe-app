@@ -6,7 +6,7 @@ part of 'quest_analytics.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$questAnalyticsHash() => r'456b64a75e47c53950c36eab545b5ee3cb03a030';
+String _$questAnalyticsHash() => r'0c572ba816eed31a888dca76a535b30334dfd101';
 
 /// See also [questAnalytics].
 @ProviderFor(questAnalytics)

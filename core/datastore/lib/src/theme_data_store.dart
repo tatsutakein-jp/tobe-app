@@ -2,12 +2,13 @@ import 'dart:async';
 
 import 'package:core_datastore/src/data_store.dart';
 import 'package:core_model/theme.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'theme_data_store.g.dart';
 
 @riverpod
-ThemeDataStore themeDataStore(ThemeDataStoreRef ref) => ThemeDataStore(
+ThemeDataStore themeDataStore(Ref ref) => ThemeDataStore(
       dataStore: ref.watch(dataStoreProvider),
     );
 

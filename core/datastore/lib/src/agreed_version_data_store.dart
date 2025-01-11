@@ -1,12 +1,13 @@
 import 'dart:async';
 
 import 'package:core_datastore/src/data_store.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'agreed_version_data_store.g.dart';
 
 @riverpod
-AgreedVersionDataStore agreedVersionDataStore(AgreedVersionDataStoreRef ref) =>
+AgreedVersionDataStore agreedVersionDataStore(Ref ref) =>
     AgreedVersionDataStore(
       dataStore: ref.watch(dataStoreProvider),
     );

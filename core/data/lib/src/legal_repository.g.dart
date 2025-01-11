@@ -6,7 +6,7 @@ part of 'legal_repository.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$legalRepositoryHash() => r'705c235ae9c5481f8f50c9a762d09b9fbce5e352';
+String _$legalRepositoryHash() => r'e20e8fc2f1c982db374c2e04f098454870b70c68';
 
 /// See also [legalRepository].
 @ProviderFor(legalRepository)

@@ -2,12 +2,13 @@ import 'dart:async';
 
 import 'package:core_datastore/theme_data_store.dart';
 import 'package:core_model/theme.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'user_settings_repository.g.dart';
 
 @riverpod
-UserSettingsRepository userSettingsRepository(UserSettingsRepositoryRef ref) =>
+UserSettingsRepository userSettingsRepository(Ref ref) =>
     UserSettingsRepository(
       themeDataStore: ref.watch(themeDataStoreProvider),
     );

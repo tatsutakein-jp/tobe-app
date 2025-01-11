@@ -7,7 +7,7 @@ part of 'quest_count_stream_use_case.dart';
 // **************************************************************************
 
 String _$questCountStreamUseCaseHash() =>
-    r'35cf2ab9d30f1d9e4ea86d0876cd298781e8bd5f';
+    r'd48e14c5a1d8434dd79764b4b3cb75fdc4d81ff3';
 
 /// クエスト数を取得する ユースケース
 ///

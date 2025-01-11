@@ -1,14 +1,13 @@
 import 'package:core_data/repository.dart';
 import 'package:core_model/quest.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'quest_count_stream_use_case.g.dart';
 
 /// クエスト数を取得する ユースケース
 @riverpod
-Stream<QuestCount> questCountStreamUseCase(
-  QuestCountStreamUseCaseRef ref,
-) {
+Stream<QuestCount> questCountStreamUseCase(Ref ref) {
   final repository = ref.watch(questRepositoryProvider);
 
   return repository.stream().map(

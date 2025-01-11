@@ -1,11 +1,12 @@
 import 'package:core_model/feed.dart';
 import 'package:core_network/news.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'news_repository.g.dart';
 
 @riverpod
-NewsRepository newsRepository(NewsRepositoryRef ref) => NewsRepository(
+NewsRepository newsRepository(Ref ref) => NewsRepository(
       remote: ref.watch(newsRemoteDataSourceProvider),
     );
 

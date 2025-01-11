@@ -6,7 +6,7 @@ part of 'authenticator.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$authenticatorHash() => r'f7988e6e4cc2ae223cf302f93a6cabdf7178f2f3';
+String _$authenticatorHash() => r'2618ef33f2b3327edb5fb4b1b958dffc9358de40';
 
 /// Authenticator instance
 ///

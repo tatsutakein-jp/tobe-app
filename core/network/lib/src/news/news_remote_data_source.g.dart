@@ -92,7 +92,7 @@ class _NewsRemoteDataSource implements NewsRemoteDataSource {
 // **************************************************************************
 
 String _$newsRemoteDataSourceHash() =>
-    r'd3694cd04205b8b0a3b4c50b752aa3999fa490ed';
+    r'328c930ac5081a09589e31ad90935f3f3efc6256';
 
 /// See also [newsRemoteDataSource].
 @ProviderFor(newsRemoteDataSource)
