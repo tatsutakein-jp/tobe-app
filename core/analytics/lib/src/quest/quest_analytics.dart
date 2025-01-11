@@ -1,9 +1,10 @@
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'quest_analytics.g.dart';
 
 @Riverpod(keepAlive: true)
-QuestAnalytics questAnalytics(QuestAnalyticsRef ref) {
+QuestAnalytics questAnalytics(Ref ref) {
   throw UnimplementedError('questAnalytics');
 }
 

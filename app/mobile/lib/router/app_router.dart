@@ -18,6 +18,7 @@ import 'package:feature_settings/feature_settings.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'app_router.g.dart';
@@ -37,7 +38,7 @@ part 'package:app_mobile/router/shell_branch/settings_branch.dart';
 final rootNavigatorKey = GlobalKey<NavigatorState>();
 
 @riverpod
-GoRouter router(RouterRef ref) {
+GoRouter router(Ref ref) {
   final authenticator = ref.watch(authenticatorProvider);
 
   return GoRouter(

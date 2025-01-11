@@ -2,12 +2,13 @@ import 'package:core_common/extension.dart';
 import 'package:core_database/quest_dao.dart';
 import 'package:core_model/quest.dart';
 import 'package:core_network/quest.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'quest_repository.g.dart';
 
 @riverpod
-QuestRepository questRepository(QuestRepositoryRef ref) => QuestRepository(
+QuestRepository questRepository(Ref ref) => QuestRepository(
       dao: ref.watch(questDaoProvider),
       remote: ref.watch(questRemoteDataSourceProvider),
     );

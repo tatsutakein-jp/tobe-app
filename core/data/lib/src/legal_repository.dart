@@ -3,12 +3,13 @@ import 'dart:async';
 import 'package:core_common/extension.dart';
 import 'package:core_datastore/agreed_version_data_store.dart';
 import 'package:core_model/rule.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'legal_repository.g.dart';
 
 @riverpod
-LegalRepository legalRepository(LegalRepositoryRef ref) => LegalRepository(
+LegalRepository legalRepository(Ref ref) => LegalRepository(
       agreedVersionDataStore: ref.watch(agreedVersionDataStoreProvider),
     );
 

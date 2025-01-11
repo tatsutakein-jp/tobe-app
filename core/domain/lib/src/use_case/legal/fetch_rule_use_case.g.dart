@@ -6,7 +6,7 @@ part of 'fetch_rule_use_case.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$fetchRuleUseCaseHash() => r'9d30bee590c4ae5342125012d35f2ef5447d45c2';
+String _$fetchRuleUseCaseHash() => r'3e6d1c9c4ec81165a6f4cb4975875e477a09a8ba';
 
 /// 同意日時を取得する
 ///

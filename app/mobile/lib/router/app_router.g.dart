@@ -368,7 +368,7 @@ extension $OnboardingRouteExtension on OnboardingRoute {
 // RiverpodGenerator
 // **************************************************************************
 
-String _$routerHash() => r'efa4c6ddaca94f9bbd052e72a5b84e6f950935ad';
+String _$routerHash() => r'1080abdf14ba8db6d25b56eb611d1f4ff955338b';
 
 /// See also [router].
 @ProviderFor(router)

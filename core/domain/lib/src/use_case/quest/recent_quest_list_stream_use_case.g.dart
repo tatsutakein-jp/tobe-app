@@ -7,7 +7,7 @@ part of 'recent_quest_list_stream_use_case.dart';
 // **************************************************************************
 
 String _$recentQuestListStreamUseCaseHash() =>
-    r'746c580bd19c2f7a5fed0b0c97e46483ac331023';
+    r'db61ed658bf040ea58be3faa41f7b89ded19d956';
 
 /// 直近のクエスト一覧を取得する ユースケース
 ///

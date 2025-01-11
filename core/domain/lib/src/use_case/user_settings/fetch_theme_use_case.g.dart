@@ -6,7 +6,7 @@ part of 'fetch_theme_use_case.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$fetchThemeUseCaseHash() => r'b31477e14eed3a1f78a2796c0be91041b0b058a5';
+String _$fetchThemeUseCaseHash() => r'a56ef152ca241bf368976419c4b5853659b01ab4';
 
 /// テーマを取得する ユースケース
 ///

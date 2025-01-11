@@ -1,14 +1,14 @@
 import 'package:core_model/src/config/app_version.dart';
 import 'package:core_model/src/config/flavor.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'app_config.freezed.dart';
-
 part 'app_config.g.dart';
 
 @Riverpod(keepAlive: true)
-AppConfig appConfig(AppConfigRef ref) {
+AppConfig appConfig(Ref ref) {
   throw UnimplementedError('appConfig');
 }
 

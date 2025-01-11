@@ -1,10 +1,11 @@
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'data_store.g.dart';
 
 /// DataStore instance
 @Riverpod(keepAlive: true)
-DataStore dataStore(DataStoreRef ref) {
+DataStore dataStore(Ref ref) {
   throw UnimplementedError('dataStore');
 }
 

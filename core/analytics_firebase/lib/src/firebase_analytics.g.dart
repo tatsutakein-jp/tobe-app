@@ -6,7 +6,7 @@ part of 'firebase_analytics.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$firebaseAnalyticsHash() => r'07b3a4c16f1891d1ebea5b32f1883eb45e945b2b';
+String _$firebaseAnalyticsHash() => r'3c074e071dc2644a67ea7bdd7bda5075d0275d83';
 
 /// FirebaseAnalytics instance
 ///

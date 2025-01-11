@@ -137,7 +137,7 @@ class _QuestRemoteDataSource implements QuestRemoteDataSource {
 // **************************************************************************
 
 String _$questRemoteDataSourceHash() =>
-    r'b4e11a4f754f614e919682cad2ec88e7ba137437';
+    r'bb2b5ee0911f1b09e0ec9a56df5c2fef7bb4b547';
 
 /// See also [questRemoteDataSource].
 @ProviderFor(questRemoteDataSource)

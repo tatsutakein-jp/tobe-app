@@ -7,7 +7,7 @@ part of 'agreed_version_data_store.dart';
 // **************************************************************************
 
 String _$agreedVersionDataStoreHash() =>
-    r'8ddcbcc5eb0f2f0864325e28002ee04d1aa80ef2';
+    r'c8a0f44e50c22321cb5d1f94dd970ee8b240ae10';
 
 /// See also [agreedVersionDataStore].
 @ProviderFor(agreedVersionDataStore)

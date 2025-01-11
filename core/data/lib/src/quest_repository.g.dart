@@ -6,7 +6,7 @@ part of 'quest_repository.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$questRepositoryHash() => r'a01bd8db9b6b3aebc224e7276cdea64bf19957b2';
+String _$questRepositoryHash() => r'50f418caf3d12597ba86677770e198041966da3e';
 
 /// See also [questRepository].
 @ProviderFor(questRepository)

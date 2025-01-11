@@ -1,12 +1,13 @@
 import 'package:core_ui/src/component/toast/toast_data.dart';
 import 'package:core_ui/toast.dart';
 import 'package:flutter/material.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'toaster.g.dart';
 
 @Riverpod(keepAlive: true)
-GlobalKey<AnimatedListState> toastListKey(ToastListKeyRef ref) {
+GlobalKey<AnimatedListState> toastListKey(Ref ref) {
   throw UnimplementedError('toastListKey');
 }
 

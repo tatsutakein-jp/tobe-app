@@ -6,7 +6,7 @@ part of 'news_repository.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$newsRepositoryHash() => r'b1ad47f8594ca16a97fbaab9853e65f4ff77622b';
+String _$newsRepositoryHash() => r'0f36ffefec0b8c363ed98ceb0e57ac09a86ce50b';
 
 /// See also [newsRepository].
 @ProviderFor(newsRepository)

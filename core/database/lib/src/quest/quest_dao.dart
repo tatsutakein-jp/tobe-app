@@ -1,10 +1,11 @@
 import 'package:core_model/quest.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'quest_dao.g.dart';
 
 @Riverpod(keepAlive: true)
-QuestDao questDao(QuestDaoRef ref) => throw UnimplementedError('questDao');
+QuestDao questDao(Ref ref) => throw UnimplementedError('questDao');
 
 abstract interface class QuestDao {
   Future<Quest?> getById({required QuestId id});

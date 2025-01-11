@@ -6,7 +6,7 @@ part of 'sync_use_case.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$syncUseCaseHash() => r'53004eda7be45942b4351dfa2f9b458c37559e28';
+String _$syncUseCaseHash() => r'3c36d8cc455234c7f69400d816fd35e87fc5ed15';
 
 /// 同期するユースケース
 ///
