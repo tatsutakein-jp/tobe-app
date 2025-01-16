@@ -6,6 +6,10 @@
     ":prHourlyLimitNone",
     ":timezone(Asia/Tokyo)",
   ],
+  schedule: [
+    // "every day at 7:00 and 16:00",
+    "* 7,16 * * *",
+  ],
   dependencyDashboard: false,
   labels: [
     "dependencies"
@@ -13,18 +17,19 @@
   pruneBranchAfterAutomerge: true,
   rangeStrategy: "pin",
   enabledManagers: [
-    "asdf"
+    "asdf",
+    "pub"
   ],
   packageRules: [
     {
-      matchManagers: [
-        "asdf"
+      groupName: "flutter",
+      matchPackageNames: [
+        "dart",
+        "flutter"
       ],
-      groupName: "asdf tools",
-      matchUpdateTypes: [
-        "minor",
-        "patch"
-      ],
-    },
+    }
+  ],
+  ignoreDeps: [
+    "*"
   ],
 }
