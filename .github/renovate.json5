@@ -15,4 +15,16 @@
   enabledManagers: [
     "asdf"
   ],
+  packageRules: [
+    {
+      matchManagers: [
+        "asdf"
+      ],
+      groupName: "asdf tools",
+      matchUpdateTypes: [
+        "minor",
+        "patch"
+      ],
+    },
+  ],
 }
