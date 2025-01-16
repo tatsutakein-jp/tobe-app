@@ -1,0 +1,95 @@
+name: Merge Queue
+
+on:
+  merge_group:
+
+concurrency:
+  group: merge-queue-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  changes:
+    uses: ./.github/workflows/wc-changes.yml
+
+  action:
+    runs-on: ubuntu-24.04
+    needs: changes
+    if: needs.changes.outputs.action == 'true'
+    permissions:
+      checks: "write"
+      contents: "read"
+      pull-requests: "write"
+    steps:
+      # https://github.com/marketplace/actions/checkout
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      # https://github.com/marketplace/actions/actionlint-with-reviewdog
+      - uses: reviewdog/action-actionlint@f3dcc52bc6039e5d736486952379dce3e869e8a2 # v1.63.0
+        with:
+          fail_on_error: true
+          filter_mode: nofilter
+          level: error
+          reporter: github-pr-review
+
+  analyze:
+    runs-on: ubuntu-24.04
+    needs:
+      - changes
+    if: needs.changes.outputs.analyze == 'true'
+    timeout-minutes: 10
+    steps:
+      # https://github.com/marketplace/actions/checkout
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      # https://github.com/marketplace/actions/mise-action
+      - name: mise action
+        uses: jdx/mise-action@5083fe46898c414b2475087cc79da59e7da859e8 # v2.1.11
+
+      - name: setup gitignore target files
+        uses: ./.github/actions/setup-gitignore-target-files
+
+      - name: setup pub
+        uses: ./.github/actions/setup-pub
+
+      - name: Run analyze
+        run: melos analyze
+
+  test:
+    runs-on: ubuntu-24.04
+    needs:
+      - changes
+    if: needs.changes.outputs.test == 'true'
+    timeout-minutes: 10
+    steps:
+      # https://github.com/marketplace/actions/checkout
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      # https://github.com/marketplace/actions/mise-action
+      - name: mise action
+        uses: jdx/mise-action@5083fe46898c414b2475087cc79da59e7da859e8 # v2.1.11
+
+      - name: setup gitignore target files
+        uses: ./.github/actions/setup-gitignore-target-files
+
+      - name: setup pub
+        uses: ./.github/actions/setup-pub
+
+      - name: Setup very_good_cli
+        run: dart pub global activate very_good_cli
+
+      - name: Run test
+        run: melos run ci:test --no-select
+
+  status-check:
+    runs-on: ubuntu-24.04
+    needs:
+      - analyze
+      - test
+      - action
+    permissions: { }
+    if: failure()
+    steps:
+      - run: exit 1
