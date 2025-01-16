@@ -129,7 +129,7 @@ updates:
       - "dependencies"
     open-pull-requests-limit: 10
 
-  # Docker の依存関係を管理
+  # Docker
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
@@ -138,24 +138,6 @@ updates:
       timezone: "Asia/Tokyo"
     groups:
       docker-dependencies:
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-          - "patch"
-    labels:
-      - "dependencies"
-    open-pull-requests-limit: 10
-
-  # Docker Compose の依存関係を管理
-  - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-      interval: "daily"
-      time: "09:00"
-      timezone: "Asia/Tokyo"
-    groups:
-      docker-compose-dependencies:
         patterns:
           - "*"
         update-types:
