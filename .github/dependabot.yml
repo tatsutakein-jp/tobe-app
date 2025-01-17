@@ -1,5 +1,4 @@
 version: 2
-enable-beta-ecosystems: true
 updates:
   # GitHub Actions の依存関係を管理
   - package-ecosystem: "github-actions"
@@ -35,35 +34,9 @@ updates:
       - "dependencies"
     open-pull-requests-limit: 10
 
-  # Dart / Flutter の依存関係を管理（ワークスペース全体）
+  # Dart / Flutter の依存関係を管理
   - package-ecosystem: "pub"
-    directories:
-      - "/"
-      - "/app/backend"
-      - "/app/catalog"
-      - "/app/mobile"
-      - "/core/analytics"
-      - "/core/analytics_firebase"
-      - "/core/authenticator"
-      - "/core/common"
-      - "/core/data"
-      - "/core/database"
-      - "/core/database_isar"
-      - "/core/datastore"
-      - "/core/designsystem"
-      - "/core/domain"
-      - "/core/model"
-      - "/core/network"
-      - "/core/network_model"
-      - "/core/testing"
-      - "/core/ui"
-      - "/feature/auth"
-      - "/feature/debug"
-      - "/feature/feed"
-      - "/feature/home"
-      - "/feature/onboarding"
-      - "/feature/quest"
-      - "/feature/settings"
+    directory: "/"
     schedule:
       interval: "daily"
       time: "07:00"
