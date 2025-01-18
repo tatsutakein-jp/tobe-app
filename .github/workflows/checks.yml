@@ -1,4 +1,4 @@
-name: 'Checks'
+name: Checks
 
 on:
   pull_request:
@@ -87,12 +87,33 @@ jobs:
       - name: Run test
         run: melos run ci:test --no-select
 
+  semantic-pull-request:
+    name: Semantic Pull Request
+    runs-on: ubuntu-24.04
+    needs:
+      - changes
+    if: needs.changes.outputs.semantic_pr == 'true'
+    steps:
+      # https://github.com/marketplace/actions/create-github-app-token
+      - name: Create GitHub App Token
+        uses: actions/create-github-app-token@c1a285145b9d317df6ced56c09f525b5c2b6f755 # v1.11.1
+        id: app-token
+        with:
+          app-id: ${{ vars.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
+      # https://github.com/marketplace/actions/semantic-pull-request
+      - uses: amannn/action-semantic-pull-request@0723387faaf9b38adef4775cd42cfd5155ed6017 # v5.5.3
+        env:
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+
   status-check:
     runs-on: ubuntu-24.04
     needs:
       - analyze
       - test
       - action
+      - semantic-pull-request
     permissions: { }
     if: failure()
     steps:
