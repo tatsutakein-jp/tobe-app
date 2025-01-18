@@ -101,3 +101,35 @@ jobs:
               'test',
             ];
             core.setOutput('dependencies', changes.some(value => dependencies.includes(value)));
+
+  display_outputs:
+    runs-on: ubuntu-24.04
+    needs:
+      - pr_type
+      - changes
+    steps:
+      - name: Display outputs
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          script: |
+            const outputs = {
+              'PR Type Check': {
+                'semantic_pr': '${{ needs.pr_type.outputs.semantic_pr }}'
+              },
+              'Changes Check': {
+                'action': '${{ needs.changes.outputs.action }}',
+                'backend': '${{ needs.changes.outputs.backend }}',
+                'analyze': '${{ needs.changes.outputs.analyze }}',
+                'any': '${{ needs.changes.outputs.any }}',
+                'test': '${{ needs.changes.outputs.test }}',
+                'dependencies': '${{ needs.changes.outputs.dependencies }}'
+              }
+            };
+
+            console.log('=== Workflow Outputs ===');
+            for (const [category, values] of Object.entries(outputs)) {
+              console.log(`\n${category}:`);
+              for (const [key, value] of Object.entries(values)) {
+                console.log(`  ${key}: ${value}`);
+              }
+            }
