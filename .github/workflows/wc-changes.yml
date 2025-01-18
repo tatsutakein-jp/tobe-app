@@ -15,12 +15,32 @@ on:
         value: ${{ jobs.changes.outputs.test }}
       dependencies:
         value: ${{ jobs.changes.outputs.dependencies }}
+      semantic_pr:
+        value: ${{ jobs.pr_type.outputs.semantic_pr }}
 
 permissions:
   contents: read
   pull-requests: read
 
 jobs:
+  pr_type:
+    runs-on: ubuntu-24.04
+    outputs:
+      semantic_pr: ${{ steps.check.outputs.semantic_pr }}
+    steps:
+      - name: Check PR type
+        id: check
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        with:
+          script: |
+            const eventType = context.eventName;
+            const prAction = context.payload.action;
+
+            const targetTypes = ['opened', 'edited', 'synchronize', 'reopened'];
+            const shouldRun = eventType === 'pull_request_target' && targetTypes.includes(prAction);
+
+            core.setOutput('semantic_pr', shouldRun);
+
   changes:
     runs-on: ubuntu-24.04
     outputs:
@@ -74,7 +94,7 @@ jobs:
         with:
           script: |
             const changes = ${{ steps.filter.outputs.changes }};
-            
+
             // 依存関係の解決が必要な変更箇所
             const dependencies = [
               'analyze',
