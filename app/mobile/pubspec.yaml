@@ -22,7 +22,7 @@ dependencies:
   core_ui: any
   cupertino_icons: 1.0.8
   dynamic_color: 1.7.0
-  envied: 1.0.0
+  envied: 1.1.1
   feature_auth: any
   feature_debug: any
   feature_feed: any
