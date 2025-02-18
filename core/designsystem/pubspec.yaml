@@ -20,7 +20,7 @@ dependencies:
   intl: 0.20.1
 
 dev_dependencies:
-  build_runner: 2.4.14
+  build_runner: 2.4.15
   core_testing: any
   flutter_gen_runner: 5.8.0
   flutter_test:
