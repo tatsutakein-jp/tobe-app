@@ -20,7 +20,7 @@
     "change-case": "5.4.4",
     "firebase-tools": "14.4.0",
     "graphqurl": "2.0.0",
-    "js-yaml": "4.1.0",
+    "js-yaml": "4.1.1",
     "lefthook": "1.11.13",
     "scaffdog": "4.1.0",
     "typescript": "5.8.3"
