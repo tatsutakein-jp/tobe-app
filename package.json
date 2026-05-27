@@ -13,7 +13,7 @@
     "scaffdog": "scaffdog generate"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.4.16",
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
     "@types/js-yaml": "4.0.9",
